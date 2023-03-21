@@ -1,1 +1,38 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+#FCont {
+  padding: 0;
+  height: 90vh;
+  z-index: -1;
+}
+#FCont img {
+  height: inherit;
+  width: 100%;
+}
+
+#SCont {
+  background-color: green;
+  height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+}
+#SCont .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15%;
+}
+#SCont .container img {
+  width: 90%;
+  height: auto;
+  margin-top: -10vh;
+}
+#SCont .container article h1 {
+  font-size: 128px;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+#SCont .container article p {
+  font-size: 24px;
+  font-family: "Gothic A1", sans-serif;
+  color: #ddd;
+}/*# sourceMappingURL=index.css.map */

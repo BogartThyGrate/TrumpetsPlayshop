@@ -1,53 +1,30 @@
 @import "../node_modules/bootstrap/scss/mixins";
-
 @import "../node_modules/bootstrap/scss/functions";
-
 @import "../node_modules/bootstrap/scss/variables";
-
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
-@include media-breakpoint-up(xxl) { 
 
-  
- }
- nav{
-    position:fixed;
+body{
+    padding: 0;
+    margin: 0;
+}
+.Cnavbar{
     z-index: 1;
-    top:0;
-    .container-fluid{
+    top: 0;
+    position: sticky;
+    background-color: white;
+    .navbar{
         .navbar-brand{
             img{
-                width: 150px;
+                height: 91px;
+                width: 146px;
             }
         }
         .navbar-nav{
             .nav-item{
                 .nav-link{
-                    font-size: 20px;
                     font-family: 'Gothic A1', sans-serif;
-                }
-                #home{
-                    border: 1px solid #feb619;
-                    background-color: #feb619;
-                    border-radius: 10px;
-                    color: white;
-                }
-                #course{
-                    border: 1px solid #1fa78e;
-                    background-color:#1fa78e;
-                    border-radius: 10px;
-                    color: white;
-                }
-                #gallery{
-                    border: 1px solid #762797;
-                    background-color: #762797;
-                    border-radius: 10px;
-                    color: white;
-                }
-                #aboutus{
-                    border: 1px solid #ff6e6c;
-                    background-color: #ff6e6c;
-                    border-radius: 10px;
-                    color: white;
+                    font-family: 20px;
+                    text-transform: uppercase;
                 }
             }
         }
