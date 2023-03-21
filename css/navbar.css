@@ -1,1 +1,39 @@
-/*# sourceMappingURL=navbar.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+@media only screen and (min-width: 1400px) {
+  nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+  }
+  nav .container-fluid .navbar-brand img {
+    width: 150px;
+  }
+  nav .container-fluid .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    font-family: "Gothic A1", sans-serif;
+  }
+  nav .container-fluid .navbar-nav .nav-item #home {
+    border: 1px solid #feb619;
+    background-color: #feb619;
+    border-radius: 10px;
+    color: white;
+  }
+  nav .container-fluid .navbar-nav .nav-item #course {
+    border: 1px solid #1fa78e;
+    background-color: #1fa78e;
+    border-radius: 10px;
+    color: white;
+  }
+  nav .container-fluid .navbar-nav .nav-item #gallery {
+    border: 1px solid #762797;
+    background-color: #762797;
+    border-radius: 10px;
+    color: white;
+  }
+  nav .container-fluid .navbar-nav .nav-item #aboutus {
+    border: 1px solid #ff6e6c;
+    background-color: #ff6e6c;
+    border-radius: 10px;
+    color: white;
+  }
+}/*# sourceMappingURL=navbar.css.map */
