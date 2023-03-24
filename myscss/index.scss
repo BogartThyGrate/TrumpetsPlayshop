@@ -2,25 +2,24 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/gotham');
-
-                
+             
 body{
-    background-image: url("/img/Background1.jpg");
+    background-image: url("/img/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-attachment: fixed;
-    height: auto;
     overflow-x: hidden;
     cursor: default;
 }
 
 #div1{
-    height: 65vh;
-    padding-top: 15%;
+
+    padding-top: 20vh;
+    padding-bottom: 25vh;
     overflow: hidden;
     z-index: 1;
+    color: white;
     h5{
         font-size: 40px;
         font-family: 'Gothic A1', sans-serif;
@@ -32,7 +31,7 @@ body{
     }
 }
 #div2{
-    background: linear-gradient(to top, #1fa78c 18%, transparent 93%);
+    background: linear-gradient(to top, #1eb6b7 18%, transparent 93%);
     height: 20vh;
 
     h5{
@@ -44,10 +43,12 @@ body{
     }
 }
 #div3{
-    background-color: #1fa78c;
-    height: 90vh;
+    background-color: #1eb6b7;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
     padding-top: 60px;
     color: white;
+    overflow: hidden;
     h1{
         text-align: center;
         font-size: 64px;
@@ -57,7 +58,7 @@ body{
     h5{
         font-size: 20px;
         text-align: center;
-        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     .row{
         padding: 20px;
@@ -72,16 +73,90 @@ body{
             background-image: url("/img/dancing.webp");
             background-size: cover;
             background-repeat: no-repeat;
-            float: none;
+            white-space: nowrap;
         }
         #singing{
-            background-image: url("/img/singing.jpg");
+            background-image: url("/img/singing.webp");
             background-size: cover;
             background-repeat: no-repeat;
-            float: none;
+            white-space: nowrap;
         }
         #acting{
-       
+            background-image: url("/img/music.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            white-space: nowrap;
         }
     }
+    .btn{
+        background-color: #FF6E6C;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+    }
+}
+#div4{
+    overflow: hidden;
+    background-color: #1eb6b7;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    overflow: hidden;
+    color: white;
+    .container{
+        overflow: hidden;
+        img{
+            float: left;
+            height:400px;
+            width: 500px;
+            object-fit: scale-down;
+        }
+        .col{
+            padding: 3%;
+            h1{
+                text-transform: uppercase;
+                font-size: 70px;
+            }
+            .btn{
+                background-color: #feb619;
+                color: white;
+              
+            }
+        }
+    }
+}
+#div5{
+    background-color: #feb619;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    overflow: hidden;
+    .row{
+        gap:20px;
+        .col{
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 300px;
+            width: 200px;
+            h1{
+                text-align: center;
+             
+            }
+            p{
+                margin-top: 20px;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+#div6{
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    background-color: #762797;
+}
+#div7{
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    background-color: #1eb6b7;
 }
