@@ -31,6 +31,8 @@ body {
 .Cnavbar .navbar .nav-link {
   margin-left: auto;
   margin-right: auto;
+  display: inline-block;
+  text-align: left;
 }
 .Cnavbar .navbar .navbar-nav .nav-item .nav-link {
   cursor: pointer;
