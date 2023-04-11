@@ -1,0 +1,238 @@
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&family=Montserrat:wght@700&display=swap');
+             
+
+body{
+    background-image: url("/img/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75.9%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    cursor: default;
+    background-color: #ddd;
+    background-blend-mode: multiply;
+
+    @include media-breakpoint-up(sm){
+        background-position-x: 79%;
+    }
+    @include media-breakpoint-up(md){
+        background-position-x: 85%;
+    }
+    @include media-breakpoint-up(lg){
+
+    }
+}
+
+#div1{
+
+    padding-top: 25vh;
+    padding-bottom: 30vh;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    position: relative;
+
+    @include media-breakpoint-up(sm){
+        padding-top:50%;
+        padding-bottom: 30%;
+    }
+    @include media-breakpoint-up(md){
+        padding-top:40%;
+    }
+    @include media-breakpoint-up(lg){
+        padding-top:30%;
+    }
+    @include media-breakpoint-up(xl){
+        padding-top: 20%;
+    }
+    @include media-breakpoint-up(xxl){
+        padding-top:23%;
+        padding-bottom: 20vh;
+    }
+    h5{
+        font-size: calc(1.2em + 1vw);
+        font-family: 'Gothic A1', sans-serif;
+        margin-top: 4%;
+
+        @include media-breakpoint-up(lg){
+
+        }
+        @include media-breakpoint-up(xxl){
+            margin-top: 0;
+            font-size: calc(0.4rem + 2vw);
+        }
+    }
+    h1{
+   
+        font-size: calc(2em + 1vw);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+
+        
+        @include media-breakpoint-up(xxl){
+            font-size: calc(2.1rem + 2vw);
+        }
+
+    }
+}
+#div2{
+    background: linear-gradient(to top, #1eb6b7 18%, transparent 93%);
+    height: 20vh;
+    h5{
+        text-align: center;
+        color: white;
+        margin-top: 1%;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+   
+}
+#div3{
+    background-color: #1eb6b7;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    color: white;
+    overflow: hidden;
+    h1{
+        text-align: center;
+        font-size: 64px;
+        font-family: 'Gotham', sans-serif;
+        text-transform: uppercase;
+    }
+    h5{
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .row{
+        padding: 20px;
+        gap: 20px;
+        
+        .col{
+            overflow: hidden;
+            width: 400px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            img{
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                aspect-ratio: 1 / 1;
+                
+            }
+        }
+   
+    }
+    .btn{
+        background-color: #FF6E6C;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+#div4{
+    overflow: hidden;
+    background-color: #1eb6b7;
+    padding-top: 15vh;
+    padding-bottom: 25vh;
+    overflow: hidden;
+    color: white;
+    .container{
+        overflow: hidden;
+        
+        .row{
+            .col{
+                
+                img{
+                    height: auto;
+                    width: 280px;
+                    object-fit:contain;
+                    aspect-ratio: 1 / 1;
+                    
+                }
+                h1{
+                    margin-top: 15%;
+                    font-size: 60px;
+                    text-transform: uppercase;
+                    
+                }
+                p{
+                    font-size: 20px;
+                }
+                .btn{
+                    background-color: #FEB619;
+                    color: white;
+                    width: 100%;
+                    
+                    @include media-breakpoint-up(lg){
+
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
+#div5{
+    background-color: #feb619;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    overflow: hidden;
+    .row{
+        gap:20px;
+        
+        .col{
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 300px;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            overflow: hidden;
+            white-space: normal;
+            margin-left: auto;
+            margin-right: auto;
+            h1{
+                text-align: center;
+            }
+            p{
+                margin-top: 20px;
+        
+                white-space: normal;
+            }
+        }
+    }
+}
+#div6{
+    padding-top: 20vh;
+    padding-bottom: 30vh;
+    background-color: #1eb6b7;
+
+    .carousel-item{
+        background-color: black;
+        padding-top: 20vh;
+        padding-bottom: 30vh;
+    }
+    .text{
+        width: 50%;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+#div7{
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    background-color: #FEB619;
+}
+ 
