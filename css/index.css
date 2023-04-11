@@ -65,6 +65,9 @@ body {
   background-attachment: fixed;
   overflow: hidden;
   width: 100vw;
+  z-index: 1;
+  position: relative;
+  padding-left: 0;
 }
 #box3 .container .title {
   font-size: 96px;
@@ -73,12 +76,15 @@ body {
   color: white;
   text-align: center;
 }
+#box3 .container .row {
+  margin-top: 5%;
+  justify-content: center;
+}
 #box3 .container .row .col img {
   height: auto;
   width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
 }
 #box3 .container .row .col-12 {
   font-family: "Century Gothic", sans-serif;
@@ -94,6 +100,20 @@ body {
   color: black;
   background-color: white;
 }
+#box3 #box {
+  height: 18vh;
+  background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+#box3 #boxtop {
+  height: 18vh;
+  background: linear-gradient(to bottom, #1a1a1a 20%, transparent 100%);
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
 
 /*Container for About Trumpets*/
 #box4 {
@@ -107,6 +127,9 @@ body {
   color: white;
 }
 #box4 .container .row .col img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   -o-object-fit: cover;
      object-fit: cover;
   width: 500px;
@@ -142,6 +165,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
+  z-index: 1;
+  position: relative;
+  padding-left: 0;
 }
 #box5 .container h1 {
   font-size: 96px;
@@ -153,6 +179,20 @@ body {
   background-color: #D9D9D9;
   border: 1px solid black;
   border-radius: 20px;
+}
+#box5 #box {
+  height: 18vh;
+  background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+#box5 #boxtop {
+  height: 18vh;
+  background: linear-gradient(to bottom, #1a1a1a 20%, transparent 100%);
+  position: absolute;
+  top: 0;
+  z-index: 3;
 }
 
 /*This container is for Partners*/
@@ -168,7 +208,46 @@ body {
   font-family: "Gotham Bold", sans-serif;
   text-transform: uppercase;
 }
-#box6 .container .row .col {
+#box6 .container .row {
+  justify-content: center;
+}
+#box6 .container .row .col .p-5 {
   height: 20vh;
   background-color: white;
+  border: 1px solid black;
+}
+
+#footer {
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  background-color: #1a1a1a;
+  color: white;
+  width: 100%;
+}
+#footer .col h5 {
+  font-size: 24px;
+}
+#footer .col ol {
+  padding-left: 0;
+  list-style-position: inside;
+}
+#footer .col ol li {
+  list-style: none;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+#footer #social .col h5 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Century Gothic", sans-serif;
+}
+#footer #social .col img {
+  display: block;
+  height: auto;
+  width: 232px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer #social .col .box {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

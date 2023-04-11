@@ -58,6 +58,7 @@ body{
         z-index: 3;
     }
 }
+
 /*Container for Different kinds of CLass*/
 #box3{
     padding-top: 20vh;
@@ -69,6 +70,9 @@ body{
     background-attachment: fixed;
     overflow: hidden;
     width: 100vw;
+    z-index: 1;
+    position: relative;
+    padding-left: 0;
     .container{
         .title{
             font-size: 96px;
@@ -78,12 +82,13 @@ body{
             text-align: center;
         }
         .row{
+            margin-top: 5%;
+            justify-content: center;
             .col{
                 img{
                     height: auto;
                     width: 300px;
                     object-fit: cover;
-                    border-radius: 20px;
                 }
             }
             .col-12{
@@ -103,6 +108,20 @@ body{
             }
         }
     }
+    #box{
+        height: 18vh;
+        background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+    }
+    #boxtop{
+        height: 18vh;
+        background: linear-gradient(to bottom, #1a1a1a 20%, transparent 100%);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
 }
 /*Container for About Trumpets*/
 #box4{
@@ -116,6 +135,9 @@ body{
             .col{
                 color: white;
                 img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
                     object-fit: cover;
                     width:  500px;
                     border-radius: 20px;
@@ -154,6 +176,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
+    z-index: 1;
+    position: relative;
+    padding-left: 0;
     .container{
         h1{
             font-size: 96px;
@@ -171,6 +196,21 @@ body{
             }
         }
     }
+    #box{
+        height: 18vh;
+        background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+    }
+    #boxtop{
+        height: 18vh;
+        background: linear-gradient(to bottom, #1a1a1a 20%, transparent 100%);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
+    
 }
 /*This container is for Partners*/
 #box6{
@@ -186,11 +226,57 @@ body{
             text-transform: uppercase;
         }
         .row{
+            justify-content: center;
             .col{
-                height: 20vh;
-                background-color: white;
+                
+                .p-5{
+                    height: 20vh;
+                    background-color: white;
+                    border: 1px solid black;
+                }
             }
         }
     }
 
+}
+#footer{
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    .col{
+        h5{
+            font-size: 24px;
+        }
+        ol{
+            padding-left: 0;
+            list-style-position: inside;
+            li{
+                list-style: none;
+                font-size: 16px;
+                margin-bottom: 6px;
+            }
+
+        }
+    }
+    #social{
+        .col{
+            h5{
+                text-align: center;
+                font-size: 32px;
+                font-family: 'Century Gothic', sans-serif;
+            }
+            img{
+                display: block;
+                height: auto;
+                width: 232px;
+                margin-left: auto;
+                margin-right: auto;
+            }   
+            .box{
+                text-align: center;
+            }
+        }
+    }
 }
