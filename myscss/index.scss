@@ -3,6 +3,8 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import url('https://fonts.cdnfonts.com/css/gotham-bold');
 @import url('https://fonts.cdnfonts.com/css/century-gothic');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
 
 *{
     margin: 0;
@@ -181,17 +183,32 @@ body{
     padding-left: 0;
     .container{
         h1{
-            font-size: 96px;
-            font-family: 'Gotham Bold', sans-serif;
             text-align: center;
             color: white;
+            font-size: 96px;
+            font-family: 'Roboto', sans-serif;
         }
         .row{
             .col{
+               
                 .p-5{
-                    background-color: #D9D9D9;
+                    
+                    background-color: #feb619;
                     border: 1px solid black;
                     border-radius: 20px;
+                    height: auto;
+                    width: 370px;
+                    img{
+                        width: 80px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        text-indent: 50px;
+                    }
+                    
                 }    
             }
         }
