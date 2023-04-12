@@ -6,22 +6,45 @@
 
 nav {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  background-color: transparent;
+  top: 0;
+}
+nav .navbar-toggler {
+  color: white;
+  background-color: white !important;
+}
+nav .container {
+  border-radius: 0 0 20px 20px;
+  transition: 720ms;
 }
 nav .container .navbar-brand img {
   height: auto;
-  width: 150px;
+  width: 100px;
+}
+nav .container .collapse {
+  white-space: nowrap;
+}
+nav .container .collapse .navbar-nav {
+  white-space: nowrap;
 }
 nav .container .collapse .navbar-nav .nav-item {
-  text-align: center;
+  white-space: nowrap;
 }
 nav .container .collapse .navbar-nav .nav-item .nav-link {
-  color: white;
   border: 1px solid none;
-  width: 130px;
-  font-size: 18px;
   font-family: "Roboto", sans-serif;
-  transition: 2s;
+  margin-left: 0;
+  transition: 0.5;
+  white-space: nowrap;
+}
+@media (min-width: 992px) {
+  nav .container .collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+    width: 120px;
+    text-align: center;
+    font-size: 18px;
+  }
 }
 nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
   color: #feb619;
