@@ -15,21 +15,12 @@ nav .navbar-toggler {
   background-color: white !important;
 }
 nav .container {
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10% 10%;
   transition: 720ms;
 }
 nav .container .navbar-brand img {
   height: auto;
   width: 100px;
-}
-nav .container .collapse {
-  white-space: nowrap;
-}
-nav .container .collapse .navbar-nav {
-  white-space: nowrap;
-}
-nav .container .collapse .navbar-nav .nav-item {
-  white-space: nowrap;
 }
 nav .container .collapse .navbar-nav .nav-item .nav-link {
   border: 1px solid none;

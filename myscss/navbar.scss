@@ -18,7 +18,7 @@ nav{
         background-color: white !important;
     }
     .container{
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 10% 10%;
         transition: 720ms;
         .navbar-brand{
             img{
@@ -27,11 +27,11 @@ nav{
             }
         }
         .collapse{
-            white-space: nowrap;
+
             .navbar-nav{
-                white-space: nowrap;
+    
                 .nav-item{
-                    white-space: nowrap;
+           
                     .nav-link{
                         border: 1px solid none;
                         font-family: 'Roboto', sans-serif;

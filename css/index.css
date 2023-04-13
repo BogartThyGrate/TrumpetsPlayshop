@@ -13,10 +13,20 @@ body {
 /*Containre for navigation and for carousel*/
 #box1 {
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
   position: relative;
   padding: 0;
   overflow: hidden;
+}
+@media (min-width: 576px) {
+  #box1 {
+    height: 92vh;
+  }
+}
+@media (min-width: 768px) {
+  #box1 {
+    height: 95vh;
+  }
 }
 #box1 .carousel {
   width: 100%;
@@ -26,7 +36,7 @@ body {
   z-index: 1;
 }
 #box1 .carousel .carousel-inner .carousel-item img {
-  height: 86vh;
+  height: 92vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -35,31 +45,103 @@ body {
   position: absolute;
   text-align: left;
   top: 0;
-  display: none;
 }
 #box1 .carousel .carousel-inner .carousel-item .title h1 {
-  margin-top: 50vh;
-  font-size: 55px;
+  margin-top: 350px;
+  font-size: 2.4em;
   font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (min-width: 576px) {
+  #box1 .carousel .carousel-inner .carousel-item .title h1 {
+    margin-top: 350px;
+  }
+}
+@media (min-width: 768px) {
+  #box1 .carousel .carousel-inner .carousel-item .title h1 {
+    margin-top: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  #box1 .carousel .carousel-inner .carousel-item .title h1 {
+    font-size: 3em;
+    margin-top: 350px;
+  }
+}
+@media (min-width: 1400px) {
+  #box1 .carousel .carousel-inner .carousel-item .title h1 {
+    margin-top: 350px;
+    font-size: 4em;
+  }
+}
 #box1 .carousel .carousel-inner .carousel-item .title h5 {
-  font-size: 30px;
+  font-size: 1.8em;
   font-family: "Century Gothic", sans-serif;
 }
-#box1 .carousel .carousel-inner .carousel-item .performance, #box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .power {
+@media (min-width: 1400px) {
+  #box1 .carousel .carousel-inner .carousel-item .title h5 {
+    font-size: 2.5em;
+  }
+}
+#box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .power {
   position: absolute;
   text-align: left;
   top: 0;
-  display: none;
 }
-#box1 .carousel .carousel-inner .carousel-item .performance h1, #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
-  margin-top: 50vh;
-  font-size: 95px;
+#box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
+  margin-top: 20.4rem;
+  font-size: 2.4em;
   font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 768px) {
+  #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
+    font-size: 2.6em;
+  }
+}
+@media (min-width: 1200px) {
+  #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
+    font-size: 4em;
+    margin-top: 25rem;
+  }
+}
+#box1 .carousel .carousel-inner .carousel-item .performance {
+  position: absolute;
+  text-align: left;
+  top: 0;
+}
+#box1 .carousel .carousel-inner .carousel-item .performance h1 {
+  margin-top: 22.4rem;
+  font-size: 2em;
+  font-family: "Gotham Bold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: normal;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  #box1 .carousel .carousel-inner .carousel-item .performance h1 {
+    font-size: 2.5em;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  #box1 .carousel .carousel-inner .carousel-item .performance h1 {
+    font-size: 2.6em;
+  }
+}
+@media (min-width: 1200px) {
+  #box1 .carousel .carousel-inner .carousel-item .performance h1 {
+    font-size: 4em;
+    margin-top: 25rem;
+  }
 }
 #box1 #box2 {
   height: 18vh;
@@ -279,6 +361,6 @@ body {
   text-align: center;
 }
 
-#box3, #box4, #box5, #box6, #footer {
+#box4, #box5, #box6, #footer {
   display: none;
 }/*# sourceMappingURL=index.css.map */
