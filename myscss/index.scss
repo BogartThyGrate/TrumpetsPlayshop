@@ -6,12 +6,10 @@
 @import url('https://fonts.cdnfonts.com/css/roboto');
 
 
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 /*Containre for navigation and for carousel*/
 #box1{
@@ -90,11 +88,11 @@ body{
 
                     
                 }
-                .premium, .power{
+                .power{
                     position:absolute;
                     text-align: left;
                     top: 0; 
-                    padding-block: min(45vh, 30rem);
+                    padding-block: min(40vh, 30rem);
                     h1{
                         font-size:clamp(1rem, 1rem + 5vw, 4rem);
                         font-family: 'Gotham Bold', sans-serif;
@@ -102,12 +100,39 @@ body{
                         text-transform: uppercase;
                         letter-spacing: 15px;
                     }
+                    h5{
+                        font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+                        color: #e6e6e6;
+                        font-weight: 100;
+                        max-width: 50%;
+                        min-width: 100%;
+                    }
+                }
+                .premium{
+                    position:absolute;
+                    text-align: left;
+                    top: 0; 
+                    padding-block: min(40vh, 30rem);
+                    h1{
+                        font-size:clamp(1rem, 1rem + 5vw, 4rem);
+                        font-family: 'Gotham Bold', sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 15px;
+                    }
+                    h5{
+                        font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+                        color: #e6e6e6;
+                        font-weight: 100;
+                        max-width: 20%;
+                        min-width: 100%;
+                    }
                 }
                 .performance{
                     position:absolute;
                     text-align: left;
                     top: 0; 
-                    padding-block: min(45vh, 30rem);
+                    padding-block: min(40vh, 30rem);
                     h1{
                         font-size:clamp(1rem, 1rem + 5vw, 4rem);
                         font-family: 'Gotham Bold', sans-serif;
@@ -115,6 +140,13 @@ body{
                         text-transform: uppercase;
                         white-space:normal;
                     
+                    }
+                    h5{
+                        font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+                        color: #e6e6e6;
+                        font-weight: 100;
+                        max-width: 50%;
+                        min-width: 100%;
                     }
                 }
             }
@@ -161,21 +193,29 @@ body{
         .row{
             margin-top: 5%;
             justify-content: center;
-            .col{
+            .col{ /* img */
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
                 img{
                     height: auto;
-                    width: 300px;
+                    min-width: 100px;
+                    max-width: 380px;
                     object-fit: cover;
+                    border-radius: 15px;
+               
                 }
             }
-            .col-12{
-                font-family: 'Century Gothic', sans-serif;
+            .col-12{ /* Button */
+
                 .btn{
+                    font-family: 'Roboto Medium', sans-serif;
                     background-color: #feb619;
                     font-size: 24px;
-                    font-weight: bold;
+                    font-weight: 700;
                     box-shadow: 5px 10px #333333;
                     color: white;
+                    letter-spacing: 3px;
 
                 }
                 .btn:hover{
@@ -373,6 +413,6 @@ body{
     }
 }
 
-#box4,#box5,#box6, #footer{
-    display: none;
-}
+    #box5,#box6, #footer{
+        display: none;
+    }

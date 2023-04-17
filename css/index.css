@@ -1,13 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/gotham-bold");
 @import url("https://fonts.cdnfonts.com/css/century-gothic");
 @import url("https://fonts.cdnfonts.com/css/roboto");
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /*Containre for navigation and for carousel*/
@@ -102,24 +98,51 @@ body {
     font-size: 2.5em;
   }
 }
-#box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .power {
+#box1 .carousel .carousel-inner .carousel-item .power {
   position: absolute;
   text-align: left;
   top: 0;
-  padding-block: min(45vh, 30rem);
+  padding-block: min(40vh, 30rem);
 }
-#box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
+#box1 .carousel .carousel-inner .carousel-item .power h1 {
   font-size: clamp(1rem, 1rem + 5vw, 4rem);
   font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 15px;
 }
+#box1 .carousel .carousel-inner .carousel-item .power h5 {
+  font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+  color: #e6e6e6;
+  font-weight: 100;
+  max-width: 50%;
+  min-width: 100%;
+}
+#box1 .carousel .carousel-inner .carousel-item .premium {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  padding-block: min(40vh, 30rem);
+}
+#box1 .carousel .carousel-inner .carousel-item .premium h1 {
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
+  font-family: "Gotham Bold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+#box1 .carousel .carousel-inner .carousel-item .premium h5 {
+  font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+  color: #e6e6e6;
+  font-weight: 100;
+  max-width: 20%;
+  min-width: 100%;
+}
 #box1 .carousel .carousel-inner .carousel-item .performance {
   position: absolute;
   text-align: left;
   top: 0;
-  padding-block: min(45vh, 30rem);
+  padding-block: min(40vh, 30rem);
 }
 #box1 .carousel .carousel-inner .carousel-item .performance h1 {
   font-size: clamp(1rem, 1rem + 5vw, 4rem);
@@ -127,6 +150,13 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   white-space: normal;
+}
+#box1 .carousel .carousel-inner .carousel-item .performance h5 {
+  font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+  color: #e6e6e6;
+  font-weight: 100;
+  max-width: 50%;
+  min-width: 100%;
 }
 #box1 #box2 {
   height: 12vh;
@@ -172,21 +202,28 @@ body {
   margin-top: 5%;
   justify-content: center;
 }
+#box3 .container .row .col { /* img */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 #box3 .container .row .col img {
   height: auto;
-  width: 300px;
+  min-width: 100px;
+  max-width: 380px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px;
 }
-#box3 .container .row .col-12 {
-  font-family: "Century Gothic", sans-serif;
-}
+#box3 .container .row .col-12 { /* Button */ }
 #box3 .container .row .col-12 .btn {
+  font-family: "Roboto Medium", sans-serif;
   background-color: #feb619;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   box-shadow: 5px 10px #333333;
   color: white;
+  letter-spacing: 3px;
 }
 #box3 .container .row .col-12 .btn:hover {
   color: black;
@@ -356,6 +393,6 @@ body {
   text-align: center;
 }
 
-#box4, #box5, #box6, #footer {
+#box5, #box6, #footer {
   display: none;
 }/*# sourceMappingURL=index.css.map */
