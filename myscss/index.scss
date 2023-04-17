@@ -20,7 +20,7 @@ body{
     overflow: hidden;
 
     @include media-breakpoint-up(sm){
-        height: 75vh;
+        height: 85vh;
     }
     @include media-breakpoint-up(md){
         height: 80vh;
@@ -124,7 +124,7 @@ body{
                         font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
                         color: #e6e6e6;
                         font-weight: 100;
-                        max-width: 20%;
+                        max-width: 20% ;
                         min-width: 100%;
                     }
                 }
@@ -199,8 +199,7 @@ body{
                 text-align: center;
                 img{
                     height: auto;
-                    min-width: 100px;
-                    max-width: 380px;
+                    width: clamp(16rem, 6rem + 20vw, 25rem);
                     object-fit: cover;
                     border-radius: 15px;
                
@@ -256,21 +255,27 @@ body{
                     margin-left: auto;
                     margin-right: auto;
                     object-fit: cover;
-                    width:  500px;
                     border-radius: 20px;
+                    width: clamp(14rem, 15rem + 10vw, 39rem);
                 }
                 h1{
                     margin-top: 6%;
-                    font-size: 80px;
+                    font-size: clamp(1.2rem, 1rem + 10vw, 5rem);
                     font-family: 'Gotham Bold', sans-serif;
                     letter-spacing: 5px;
+                    text-align: center;
+                    
+                    @include media-breakpoint-up(lg){
+                        text-align: left;
+                    }
                 }
                 p{
                     margin-top: 2%;
-                    font-size: 20px;
-                    font-family: 'Century Gothic', sans-serif;
+                    font-size: clamp(1rem, 0.5rem + 0.5vw, 1.2rem);
+                    font-family: 'Roboto Medium', sans-serif;
+                    font-weight: 100;
                     text-align: justify;
-                    text-indent: 70px;
+                    text-indent: 50px;
                 }
                 .btn{
                     border: 1px solid black;
@@ -296,23 +301,25 @@ body{
     z-index: 1;
     position: relative;
     padding-left: 0;
+    overflow: hidden;
     .container{
         h1{
             text-align: center;
             color: white;
-            font-size: 96px;
+            font-size: clamp(1em, 2em + 2vw, 5em);
             font-family: 'Roboto', sans-serif;
         }
         .row{
+
             .col{
                
                 .p-5{
-                    
+                    margin-left: auto;
+                    margin-right: auto;
                     background-color: #feb619;
                     border: 1px solid black;
                     border-radius: 20px;
-                    height: auto;
-                    width: 370px;
+                    width: clamp(15rem, 15rem + 10vw, 50rem);
                     img{
                         width: 80px;
                         display: block;
@@ -351,9 +358,10 @@ body{
     background-color: #1a1a1a;
     width: 100vw;
     color: white;
+    overflow: hidden;
     .container{
         h1{
-            font-size: 96px;
+            font-size: clamp(0.8em, 0.5em + 10vw, 6em);
             font-family: 'Gotham Bold', sans-serif;
             text-transform: uppercase;
         }
@@ -377,6 +385,9 @@ body{
     background-color: #1a1a1a;
     color: white;
     width: 100%;
+    #menu, #classes, #partners{
+        display: none;
+    }
     .col{
         h5{
             font-size: 24px;
@@ -393,16 +404,18 @@ body{
         }
     }
     #social{
+        margin-left: auto;
+        margin-right: auto;
         .col{
             h5{
                 text-align: center;
-                font-size: 32px;
+                font-size: clamp(1rem, 0.5rem + 4vw, 3rem);
                 font-family: 'Century Gothic', sans-serif;
             }
             img{
                 display: block;
                 height: auto;
-                width: 232px;
+                width: clamp(16rem, 2rem + 3vw, 25rem);
                 margin-left: auto;
                 margin-right: auto;
             }   
@@ -411,8 +424,11 @@ body{
             }
         }
     }
+
+    @include media-breakpoint-up(xl){
+        #menu, #classes, #partners{
+            display: block;
+        }
+    }
 }
 
-    #box5,#box6, #footer{
-        display: none;
-    }
