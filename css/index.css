@@ -13,17 +13,32 @@ body {
 /*Containre for navigation and for carousel*/
 #box1 {
   width: 100vw;
-  height: 95vh;
+  height: 75vh;
   position: relative;
   padding: 0;
   overflow: hidden;
 }
 @media (min-width: 576px) {
   #box1 {
-    height: 92vh;
+    height: 75vh;
   }
 }
 @media (min-width: 768px) {
+  #box1 {
+    height: 80vh;
+  }
+}
+@media (min-width: 992px) {
+  #box1 {
+    height: 83vh;
+  }
+}
+@media (min-width: 1200px) {
+  #box1 {
+    height: 88vh;
+  }
+}
+@media (min-width: 1400px) {
   #box1 {
     height: 95vh;
   }
@@ -36,44 +51,47 @@ body {
   z-index: 1;
 }
 #box1 .carousel .carousel-inner .carousel-item img {
-  height: 92vh;
-  width: 100%;
+  min-height: 73vh;
+  min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 576px) {
+  #box1 .carousel .carousel-inner .carousel-item img {
+    height: 73vh;
+  }
+}
+@media (min-width: 768px) {
+  #box1 .carousel .carousel-inner .carousel-item img {
+    height: 78vh;
+  }
+}
+@media (min-width: 992px) {
+  #box1 .carousel .carousel-inner .carousel-item img {
+    height: 80vh;
+  }
+}
+@media (min-width: 1200px) {
+  #box1 .carousel .carousel-inner .carousel-item img {
+    height: 85vh;
+  }
+}
+@media (min-width: 1400px) {
+  #box1 .carousel .carousel-inner .carousel-item img {
+    height: 92vh;
+  }
 }
 #box1 .carousel .carousel-inner .carousel-item .title {
   position: absolute;
   text-align: left;
   top: 0;
+  padding-block: min(40vh, 30rem);
 }
 #box1 .carousel .carousel-inner .carousel-item .title h1 {
-  margin-top: 350px;
-  font-size: 2.4em;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
   font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-}
-@media (min-width: 576px) {
-  #box1 .carousel .carousel-inner .carousel-item .title h1 {
-    margin-top: 350px;
-  }
-}
-@media (min-width: 768px) {
-  #box1 .carousel .carousel-inner .carousel-item .title h1 {
-    margin-top: 350px;
-  }
-}
-@media (min-width: 1200px) {
-  #box1 .carousel .carousel-inner .carousel-item .title h1 {
-    font-size: 3em;
-    margin-top: 350px;
-  }
-}
-@media (min-width: 1400px) {
-  #box1 .carousel .carousel-inner .carousel-item .title h1 {
-    margin-top: 350px;
-    font-size: 4em;
-  }
 }
 #box1 .carousel .carousel-inner .carousel-item .title h5 {
   font-size: 1.8em;
@@ -88,67 +106,44 @@ body {
   position: absolute;
   text-align: left;
   top: 0;
+  padding-block: min(45vh, 30rem);
 }
 #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
-  margin-top: 20.4rem;
-  font-size: 2.4em;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
   font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-}
-@media (min-width: 576px) {
-  #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
-    font-size: 2.5em;
-  }
-}
-@media (min-width: 768px) {
-  #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
-    font-size: 2.6em;
-  }
-}
-@media (min-width: 1200px) {
-  #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
-    font-size: 4em;
-    margin-top: 25rem;
-  }
+  letter-spacing: 15px;
 }
 #box1 .carousel .carousel-inner .carousel-item .performance {
   position: absolute;
   text-align: left;
   top: 0;
+  padding-block: min(45vh, 30rem);
 }
 #box1 .carousel .carousel-inner .carousel-item .performance h1 {
-  margin-top: 22.4rem;
-  font-size: 2em;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
   font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   white-space: normal;
-  text-align: center;
-}
-@media (min-width: 576px) {
-  #box1 .carousel .carousel-inner .carousel-item .performance h1 {
-    font-size: 2.5em;
-    text-align: left;
-  }
-}
-@media (min-width: 768px) {
-  #box1 .carousel .carousel-inner .carousel-item .performance h1 {
-    font-size: 2.6em;
-  }
-}
-@media (min-width: 1200px) {
-  #box1 .carousel .carousel-inner .carousel-item .performance h1 {
-    font-size: 4em;
-    margin-top: 25rem;
-  }
 }
 #box1 #box2 {
-  height: 18vh;
+  height: 12vh;
   background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
   position: absolute;
   bottom: 0;
   z-index: 3;
+}
+@media (min-width: 576px) {
+  #box1 #box2 {
+    height: 12vh;
+  }
+}
+@media (min-width: 768px) {
+  #box1 #box2 {
+    height: 18vh;
+  }
 }
 
 /*Container for Different kinds of CLass*/
@@ -167,7 +162,7 @@ body {
   padding-left: 0;
 }
 #box3 .container .title {
-  font-size: 96px;
+  font-size: clamp(1em, 1em + 10vw, 6em);
   font-family: "Gotham Bold", sans-serif;
   text-transform: uppercase;
   color: white;

@@ -4,12 +4,12 @@ btn.addEventListener('click', function(){
   total++;
 
     if(total === 1){
-      $(".container").css("background-color","white");
+      $("nav .container-fluid").css("background-color","white");
       console.log(total);
     }
     else if( total === 2){
       total = 0;
-      $(".container").css("background-color",""); 
+      $("nav .container-fluid").css("background-color",""); 
       console.log(total);
     }
 });
