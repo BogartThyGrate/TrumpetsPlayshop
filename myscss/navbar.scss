@@ -8,50 +8,49 @@
     padding: 0;
 }
 
-nav{
-    position: relative;
-    z-index: 3;
-    background-color: transparent;
+#nav{
+    position: sticky;
     top: 0;
-    .navbar-toggler{
-        color: white;
-        background-color: white !important;
-    }
-    #container{
-        transition: 720ms;
-        .navbar-brand{
-            img{
-                height: auto;
-                width: 100px;
+    left: 0;
+    background-color: #efeeec;
+    nav{
+        
+        #container{
+            transition: 720ms;
+            .navbar-brand{
+                img{
+                    height: auto;
+                    width: 100px;
+                }
             }
-        }
-        .collapse{
-
-            .navbar-nav{
+            .collapse{
     
-                .nav-item{
-           
-                    .nav-link{
-                        border: 1px solid none;
-                        font-family: 'Roboto', sans-serif;
-                        margin-left: 0;
-                        transition: 0.5;
-                        white-space: nowrap;
-                        @include media-breakpoint-up(lg){
-                            color: white;
-                            width: 120px;
-                            text-align: center;
-                            font-size: 18px;
+                .navbar-nav{
+        
+                    .nav-item{
+               
+                        .nav-link{
+                            border: 1px solid none;
+                            font-family: 'Roboto', sans-serif;
+                            margin-left: 0;
+                            transition: 0.5;
+                            white-space: nowrap;
+                            @include media-breakpoint-up(lg){
+                                width: 120px;
+                                color: black;
+                                text-align: center;
+                                font-size: 18px;
+                            }
                         }
-                    }
-                    .nav-link:hover{
-                        color: #feb619;
-                        border-bottom: 1px solid #feb619;
+                        .nav-link:hover{
+                            color: #feb619;
+                            border-bottom: 1px solid #feb619;
+                        }
                     }
                 }
             }
         }
+    
     }
-
+    
 }
-
