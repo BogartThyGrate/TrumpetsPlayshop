@@ -1,0 +1,65 @@
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import url('https://fonts.cdnfonts.com/css/gotham-bold');
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+
+
+#footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+
+
+    #menu, #classes, #partners{
+        display: none;
+    }
+    .col{
+        h5{
+            font-size: 24px;
+        }
+        ol{
+            padding-left: 0;
+            list-style-position: inside;
+            li{
+                list-style: none;
+                font-size: 16px;
+                margin-bottom: 6px;
+            }
+
+        }
+    }
+    #social{
+        margin-left: auto;
+        margin-right: auto;
+        .col{
+            h5{
+                text-align: center;
+                font-size: clamp(1rem, 0.5rem + 4vw, 3rem);
+                font-family: 'Century Gothic', sans-serif;
+            }
+            img{
+                display: block;
+                height: auto;
+                width: clamp(16rem, 2rem + 3vw, 25rem);
+                margin-left: auto;
+                margin-right: auto;
+            }   
+            .box{
+                text-align: center;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        #menu, #classes, #partners{
+            display: block;
+        }
+    }
+}

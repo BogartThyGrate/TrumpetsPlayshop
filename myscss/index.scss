@@ -20,7 +20,7 @@ body{
     overflow: hidden;
 
     @include media-breakpoint-up(sm){
-        height: 85vh;
+        height: 80vh;
     }
     @include media-breakpoint-up(md){
         height: 80vh;
@@ -201,14 +201,14 @@ nav{
         }
     }
     #box2{
-        height: 12vh;
+        height:10vh;
         background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
         position: absolute;
         bottom: 0;
         z-index: 3;
         
         @include media-breakpoint-up(sm){
-            height: 12vh;
+            height: 35vh;
         }
         @include media-breakpoint-up(md){
             height: 18vh;
@@ -247,7 +247,7 @@ nav{
                 text-align: center;
                 img{
                     height: auto;
-                    width: clamp(16rem, 6rem + 20vw, 25rem);
+                    width: clamp(14rem, 6rem + 20vw, 25rem);
                     object-fit: cover;
                     border-radius: 15px;
                
@@ -290,33 +290,62 @@ nav{
 /*Container for About Trumpets*/
 #box4{
     background-color: #1a1a1a;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
     .container{
+
         .row{
-            width: 100%;
-            .col{
-                padding: 10px;
-                
+          @include media-breakpoint-up(lg){
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+          }
+            .col{   
+                @include media-breakpoint-up(lg){
+                    padding: 50px;
+                }
                     video{
-                        margin-top: 10%;
-                        width: 100%;
-                        border-radius: 20px;
+                        
+                        width: clamp(17rem,70vw, 30rem);
+                        border-radius: 10px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                        
+                        @include media-breakpoint-up(xl){
+                            margin-top: 20%;
+                            width: clamp(16rem,70vw, 35rem);
+                        }
+                        @include media-breakpoint-up(xxl){
+                            width: clamp(16rem,70vw, 40rem);
+                            margin-top: 0;
+                        }
                     }
                     h1{
-                        font-size: clamp(1rem, 2rem + 4vw, 6rem);
+                        margin-top: 50px;
+                        font-size: clamp(3rem,  4vw, 6rem);
                         color: white;
                         font-family: 'Roboto', sans-serif;  
                         font-weight: 700;
+
+                        @include media-breakpoint-up(lg){
+                            margin-top: 0;
+                        }
                     }
                     p{
-                        font-size: clamp(0.3rem, 3rem + 4vw, 1.1rem);
+                        font-size: clamp(0.3rem, 0.1rem + 4vw, 1.1rem);
                         text-justify:auto;
                         color: white;
                         font-family: 'Century Gothic', sans-serif;
                                                 
                     }
-                
+            }
+            .col{
+                h1,p{
+                    @include media-breakpoint-up(lg){
+                        padding-left: 50px;
+                    }
+                }
             }
         }
     }
@@ -411,56 +440,5 @@ nav{
     }
 
 }
-#footer{
-    padding-top: 20vh;
-    padding-bottom: 10vh;
-    background-color: #1a1a1a;
-    color: white;
-    width: 100%;
-    #menu, #classes, #partners{
-        display: none;
-    }
-    .col{
-        h5{
-            font-size: 24px;
-        }
-        ol{
-            padding-left: 0;
-            list-style-position: inside;
-            li{
-                list-style: none;
-                font-size: 16px;
-                margin-bottom: 6px;
-            }
 
-        }
-    }
-    #social{
-        margin-left: auto;
-        margin-right: auto;
-        .col{
-            h5{
-                text-align: center;
-                font-size: clamp(1rem, 0.5rem + 4vw, 3rem);
-                font-family: 'Century Gothic', sans-serif;
-            }
-            img{
-                display: block;
-                height: auto;
-                width: clamp(16rem, 2rem + 3vw, 25rem);
-                margin-left: auto;
-                margin-right: auto;
-            }   
-            .box{
-                text-align: center;
-            }
-        }
-    }
-
-    @include media-breakpoint-up(xl){
-        #menu, #classes, #partners{
-            display: block;
-        }
-    }
-}
 

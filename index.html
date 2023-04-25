@@ -3,24 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trumpets</title>
+    <title>Trumpets Playshop</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="icon" href="/img/logo.webp">
+    <link rel="stylesheet" href="/css/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
-    <link
-  href="https://unpkg.com/video.js@7/dist/video-js.min.css"
-  rel="stylesheet"
-/>
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/>
 
 <!-- City -->
-<link
-  href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
-  rel="stylesheet"
-/>
+<link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet"/>
   </head>
   <body>
 
@@ -38,19 +34,9 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
+                
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Classes
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Performance</a></li>
-                    <li><a class="dropdown-item" href="#">Premium</a></li>
-                    <li><a class="dropdown-item" href="#">Power</a></li>
-               
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="/html/class/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About us
                   </a>
                   <ul class="dropdown-menu">
@@ -59,7 +45,17 @@
                
                   </ul>
                 </li>
-
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Classes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/html/class/performance/index.html">Performance</a></li>
+                    <li><a class="dropdown-item" href="/html/class/premium/premium.html">Premium</a></li>
+                    <li><a class="dropdown-item" href="/html/class/power/power.html">Power</a></li>
+               
+                  </ul>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact Us</a>
                 </li>
@@ -124,20 +120,21 @@
         <div class="container-fluid" id="box2">
         </div>
       </div> 
-      <!--This container is for the about -->
+      <!--This container contains video and information about trumpets -->
       <div class="container-fluid" id="box4">
         <div class="container">
-          <div class="row row-cols-1 row-cols-lg-2 g-5">
+          <div class="row row-cols-1 row-cols-xl-2 g-1 g-lg-2">
             <div class="col">
-                <div class="p-1">
-                    <video   controls loop  >
-                      <source src="/img/bidjo.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="p-1">
+                <video controls autoplay muted loop >
+                  <source src="/img/bidjo.mp4" type="video/mp4" >
+                  Your Browser does not support the video player
+                </video>
+              </div>
             </div>
             <div class="col">
-              <div class="p-5">
-                <h1>About us</h1>
+              <div class="p-1">
+                <h1>About Us</h1>
                 <p>Trumpets Playshop offers workshops and training programs that allow aspiring performers to explore and enhance their skills -- singing, dancing, acting, and more. As an innovator in developing workshop programs, Playshop has pioneered courses such as Street Dancing, Musical Theater, Public Speaking, Modeling, and Hosting. Playshop also offers advanced classes under Trumpets Playhouse and the Artist Development Program for students who wish to launch a career in Theater. </p>
               </div>
             </div>
@@ -150,7 +147,7 @@
         </div>  
         <div class="container">
             <h3 class="title">classes</h3>
-            <div class="row  row-cols-1  row-cols-xxl-3 g-5">
+            <div class="row  row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-5">
               <div class="col">
                 <div class="p-0 p-lg-5">
                   <img src="/img/class2.webp" alt="class2">
@@ -167,7 +164,7 @@
                 </div>
               </div>
               <div class="col col-12 mt-5 text-center w-100">
-                <button class="btn"><a href="/html/about/about.html" class="text-decoration-none text-dark">View more</a> </button>
+                <a href="/html/class/class.html" class="text-decoration-none text-dark btn">View more  </a>
               </div>
             </div>
         </div>
