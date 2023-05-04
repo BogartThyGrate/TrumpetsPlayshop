@@ -1,6 +1,6 @@
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 @import url('https://fonts.cdnfonts.com/css/gotham-bold');
 @import url('https://fonts.cdnfonts.com/css/century-gothic');
 @import url('https://fonts.cdnfonts.com/css/roboto');
@@ -18,22 +18,22 @@ body{
     position: relative;
     padding: 0;
     overflow: hidden;
-
-    @include media-breakpoint-up(sm){
-        height: 80vh;
+    @include media-breakpoint-down(sm){/*portrait phone, less than 576px*/
+        height: 75vh;
     }
-    @include media-breakpoint-up(md){
-        height: 80vh;
+    @include media-breakpoint-up(sm){// Small devices (landscape phones, 576px and up)
+        height: 90vh;
     }
-    @include media-breakpoint-up(lg){
-        height: 83vh;
-    }
-    @include media-breakpoint-up(xl){
-        height: 88vh;
-    }
-    @include media-breakpoint-up(xxl){
+    @include media-breakpoint-down(md){/*landscape phone, less than 768px*/
         height: 95vh;
     }
+    @include media-breakpoint-down(lg){/*landscape phone, less than 768px*/
+        height: 95vh;
+    }
+
+    /*This is for the breakpoint for downscreen*/
+
+
     
 nav{
     position: relative;
@@ -81,7 +81,6 @@ nav{
     }
 
 }
-    
     .carousel{
         width: 100%;
         position: absolute;
@@ -91,63 +90,34 @@ nav{
         .carousel-inner{
             .carousel-item{
                 img{
-                    min-height: 73vh;
+                    height:73vh;
                     min-width: 100%;
                     object-fit: cover;
-
-                           
-                    @include media-breakpoint-up(sm){
+                    @include media-breakpoint-down(sm){/*portrait phone, less than 576px*/
                         height: 73vh;
                     }
-                    @include media-breakpoint-up(md){
-                        height: 78vh;
+
+                    @include media-breakpoint-up(sm){// Small devices (landscape phones, 576px and up)
+                        height: 88vh;
                     }
-                    @include media-breakpoint-up(lg){
-                        height: 80vh;
+                    @include media-breakpoint-down(md){// `md` applies to small devices (landscape phones, less than 768px)
+                        height: 93vh;
                     }
-                    @include media-breakpoint-up(xl){
-                        height: 85vh;
-                    }
-                    @include media-breakpoint-up(xxl){
-                        height: 92vh;
-                    }
-            
+                 
                 }
                 .title{
                     position:absolute;
                     text-align: left;
                     top: 0; 
-                    padding-block: min(40vh, 30rem);
-                    h1{
-                        font-size:clamp(1rem, 1rem + 5vw, 4rem);
-                        font-family: 'Gotham Bold', sans-serif;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                    }
-
                     h5{
                         font-size: 1.8em;
                         font-family: 'Century Gothic', sans-serif;
-
                         @include media-breakpoint-up(xxl){
                             font-size: 2.5em;
                         }
                     }
-
-                    
                 }
                 .power{
-                    position:absolute;
-                    text-align: left;
-                    top: 0; 
-                    padding-block: min(40vh, 30rem);
-                    h1{
-                        font-size:clamp(1rem, 1rem + 5vw, 4rem);
-                        font-family: 'Gotham Bold', sans-serif;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        letter-spacing: 15px;
-                    }
                     h5{
                         font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
                         color: #e6e6e6;
@@ -157,17 +127,7 @@ nav{
                     }
                 }
                 .premium{
-                    position:absolute;
-                    text-align: left;
-                    top: 0; 
-                    padding-block: min(40vh, 30rem);
-                    h1{
-                        font-size:clamp(1rem, 1rem + 5vw, 4rem);
-                        font-family: 'Gotham Bold', sans-serif;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        letter-spacing: 15px;
-                    }
+
                     h5{
                         font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
                         color: #e6e6e6;
@@ -177,17 +137,12 @@ nav{
                     }
                 }
                 .performance{
-                    position:absolute;
-                    text-align: left;
-                    top: 0; 
-                    padding-block: min(40vh, 30rem);
+                
                     h1{
-                        font-size:clamp(1rem, 1rem + 5vw, 4rem);
-                        font-family: 'Gotham Bold', sans-serif;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        white-space:normal;
-                    
+                        font-size:clamp(1.3rem, 1.2rem + 3vw, 4rem) !important;
+                        @include media-breakpoint-down(lg){
+                            font-size: clamp(1.4rem, 1.4rem + 1vw, 4rem) !important;
+                        }
                     }
                     h5{
                         font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
@@ -197,21 +152,108 @@ nav{
                         min-width: 100%;
                     }
                 }
+                .title, .power, .premium,.performance{
+                    padding-block: min(44vh, 30rem);
+                    position:absolute;
+                    text-align: left;
+                    top: 0; 
+
+                    @include media-breakpoint-up(md){ // Medium devices (tablets, 768px and up)   
+                        padding-block: min(40vh, 30rem);
+                    }
+                    @include media-breakpoint-down(md){
+                        padding-block: min(40vh, 30rem);
+                    }
+                    h1{
+                        font-size:clamp(1.5rem, 1.5rem + 2vw, 4rem);
+                        font-family: 'Gotham Bold', sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+           
+
+                    }
+
+                }
+                .premium, .power{
+                    h1{
+                        letter-spacing: 5px;
+                    }
+                }
+             
             }
         }
     }
     #box2{
-        height:10vh;
+        height:16vh;
         background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
         position: absolute;
         bottom: 0;
         z-index: 3;
-        
-        @include media-breakpoint-up(sm){
+        @include media-breakpoint-down(lg){/*landscape phone, less than 768px*/
             height: 35vh;
         }
-        @include media-breakpoint-up(md){
-            height: 18vh;
+    
+    }
+}
+/*Container for About Trumpets*/
+#box4{
+    background-color: #1a1a1a;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    .container{
+
+        .row{
+          @include media-breakpoint-up(lg){
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+          }
+            .col{   
+                @include media-breakpoint-up(lg){
+                    padding: 50px;
+                }
+                    video{
+                        width: clamp(15rem,70vw, 30rem);
+                        border-radius: 10px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                        
+                        @include media-breakpoint-up(xl){
+                            margin-top: 20%;
+                            width: clamp(16rem,70vw, 35rem);
+                        }
+                        @include media-breakpoint-up(xxl){
+                            width: clamp(16rem,70vw, 40rem);
+                            margin-top: 0;
+                        }
+                    }
+                    h1{
+                        margin-top: 50px;
+                        font-size: clamp(3rem,  4vw, 6rem);
+                        color: white;
+                        font-family: 'Roboto', sans-serif;  
+                        font-weight: 700;
+
+                        @include media-breakpoint-up(lg){
+                            margin-top: 0;
+                        }
+                    }
+                    p{
+                        font-size: clamp(0.5rem, 0.5rem + 2vw, 1.1rem);
+                        text-justify:auto;
+                        color: white;
+                        font-family: 'Century Gothic', sans-serif;
+                                                
+                    }
+            }
+            .col{
+                h1,p{
+                    @include media-breakpoint-up(lg){
+                        padding-left: 50px;
+                    }
+                }
+            }
         }
     }
 }
@@ -287,69 +329,7 @@ nav{
         z-index: 3;
     }
 }
-/*Container for About Trumpets*/
-#box4{
-    background-color: #1a1a1a;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    overflow: hidden;
-    .container{
 
-        .row{
-          @include media-breakpoint-up(lg){
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-          }
-            .col{   
-                @include media-breakpoint-up(lg){
-                    padding: 50px;
-                }
-                    video{
-                        
-                        width: clamp(17rem,70vw, 30rem);
-                        border-radius: 10px;
-                        margin-left: auto;
-                        margin-right: auto;
-                        display: block;
-                        
-                        @include media-breakpoint-up(xl){
-                            margin-top: 20%;
-                            width: clamp(16rem,70vw, 35rem);
-                        }
-                        @include media-breakpoint-up(xxl){
-                            width: clamp(16rem,70vw, 40rem);
-                            margin-top: 0;
-                        }
-                    }
-                    h1{
-                        margin-top: 50px;
-                        font-size: clamp(3rem,  4vw, 6rem);
-                        color: white;
-                        font-family: 'Roboto', sans-serif;  
-                        font-weight: 700;
-
-                        @include media-breakpoint-up(lg){
-                            margin-top: 0;
-                        }
-                    }
-                    p{
-                        font-size: clamp(0.3rem, 0.1rem + 4vw, 1.1rem);
-                        text-justify:auto;
-                        color: white;
-                        font-family: 'Century Gothic', sans-serif;
-                                                
-                    }
-            }
-            .col{
-                h1,p{
-                    @include media-breakpoint-up(lg){
-                        padding-left: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
 /*Container for Testimonials*/
 #box5{
     padding-top: 20vh;

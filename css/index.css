@@ -13,29 +13,25 @@ body {
   position: relative;
   padding: 0;
   overflow: hidden;
+  /*This is for the breakpoint for downscreen*/
+}
+@media (max-width: 575.98px) {
+  #box1 { /*portrait phone, less than 576px*/
+    height: 75vh;
+  }
 }
 @media (min-width: 576px) {
   #box1 {
-    height: 80vh;
+    height: 90vh;
   }
 }
-@media (min-width: 768px) {
-  #box1 {
-    height: 80vh;
+@media (max-width: 767.98px) {
+  #box1 { /*landscape phone, less than 768px*/
+    height: 95vh;
   }
 }
-@media (min-width: 992px) {
-  #box1 {
-    height: 83vh;
-  }
-}
-@media (min-width: 1200px) {
-  #box1 {
-    height: 88vh;
-  }
-}
-@media (min-width: 1400px) {
-  #box1 {
+@media (max-width: 991.98px) {
+  #box1 { /*landscape phone, less than 768px*/
     height: 95vh;
   }
 }
@@ -83,47 +79,30 @@ body {
   z-index: 1;
 }
 #box1 .carousel .carousel-inner .carousel-item img {
-  min-height: 73vh;
+  height: 73vh;
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 576px) {
-  #box1 .carousel .carousel-inner .carousel-item img {
+@media (max-width: 575.98px) {
+  #box1 .carousel .carousel-inner .carousel-item img { /*portrait phone, less than 576px*/
     height: 73vh;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #box1 .carousel .carousel-inner .carousel-item img {
-    height: 78vh;
+    height: 88vh;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 767.98px) {
   #box1 .carousel .carousel-inner .carousel-item img {
-    height: 80vh;
-  }
-}
-@media (min-width: 1200px) {
-  #box1 .carousel .carousel-inner .carousel-item img {
-    height: 85vh;
-  }
-}
-@media (min-width: 1400px) {
-  #box1 .carousel .carousel-inner .carousel-item img {
-    height: 92vh;
+    height: 93vh;
   }
 }
 #box1 .carousel .carousel-inner .carousel-item .title {
   position: absolute;
   text-align: left;
   top: 0;
-  padding-block: min(40vh, 30rem);
-}
-#box1 .carousel .carousel-inner .carousel-item .title h1 {
-  font-size: clamp(1rem, 1rem + 5vw, 4rem);
-  font-family: "Gotham Bold", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 #box1 .carousel .carousel-inner .carousel-item .title h5 {
   font-size: 1.8em;
@@ -134,38 +113,12 @@ body {
     font-size: 2.5em;
   }
 }
-#box1 .carousel .carousel-inner .carousel-item .power {
-  position: absolute;
-  text-align: left;
-  top: 0;
-  padding-block: min(40vh, 30rem);
-}
-#box1 .carousel .carousel-inner .carousel-item .power h1 {
-  font-size: clamp(1rem, 1rem + 5vw, 4rem);
-  font-family: "Gotham Bold", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-}
 #box1 .carousel .carousel-inner .carousel-item .power h5 {
   font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
   color: #e6e6e6;
   font-weight: 100;
   max-width: 50%;
   min-width: 100%;
-}
-#box1 .carousel .carousel-inner .carousel-item .premium {
-  position: absolute;
-  text-align: left;
-  top: 0;
-  padding-block: min(40vh, 30rem);
-}
-#box1 .carousel .carousel-inner .carousel-item .premium h1 {
-  font-size: clamp(1rem, 1rem + 5vw, 4rem);
-  font-family: "Gotham Bold", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 15px;
 }
 #box1 .carousel .carousel-inner .carousel-item .premium h5 {
   font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
@@ -174,18 +127,13 @@ body {
   max-width: 20%;
   min-width: 100%;
 }
-#box1 .carousel .carousel-inner .carousel-item .performance {
-  position: absolute;
-  text-align: left;
-  top: 0;
-  padding-block: min(40vh, 30rem);
-}
 #box1 .carousel .carousel-inner .carousel-item .performance h1 {
-  font-size: clamp(1rem, 1rem + 5vw, 4rem);
-  font-family: "Gotham Bold", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  white-space: normal;
+  font-size: clamp(1.3rem, 1.2rem + 3vw, 4rem) !important;
+}
+@media (max-width: 991.98px) {
+  #box1 .carousel .carousel-inner .carousel-item .performance h1 {
+    font-size: clamp(1.4rem, 1.4rem + 1vw, 4rem) !important;
+  }
 }
 #box1 .carousel .carousel-inner .carousel-item .performance h5 {
   font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
@@ -194,21 +142,102 @@ body {
   max-width: 50%;
   min-width: 100%;
 }
+#box1 .carousel .carousel-inner .carousel-item .title, #box1 .carousel .carousel-inner .carousel-item .power, #box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .performance {
+  padding-block: min(44vh, 30rem);
+  position: absolute;
+  text-align: left;
+  top: 0;
+}
+@media (min-width: 768px) {
+  #box1 .carousel .carousel-inner .carousel-item .title, #box1 .carousel .carousel-inner .carousel-item .power, #box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .performance {
+    padding-block: min(40vh, 30rem);
+  }
+}
+@media (max-width: 767.98px) {
+  #box1 .carousel .carousel-inner .carousel-item .title, #box1 .carousel .carousel-inner .carousel-item .power, #box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .performance {
+    padding-block: min(40vh, 30rem);
+  }
+}
+#box1 .carousel .carousel-inner .carousel-item .title h1, #box1 .carousel .carousel-inner .carousel-item .power h1, #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .performance h1 {
+  font-size: clamp(1.5rem, 1.5rem + 2vw, 4rem);
+  font-family: "Gotham Bold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
+  letter-spacing: 5px;
+}
 #box1 #box2 {
-  height: 10vh;
+  height: 16vh;
   background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
   position: absolute;
   bottom: 0;
   z-index: 3;
 }
-@media (min-width: 576px) {
-  #box1 #box2 {
+@media (max-width: 991.98px) {
+  #box1 #box2 { /*landscape phone, less than 768px*/
     height: 35vh;
   }
 }
-@media (min-width: 768px) {
-  #box1 #box2 {
-    height: 18vh;
+
+/*Container for About Trumpets*/
+#box4 {
+  background-color: #1a1a1a;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  #box4 .container .row {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+}
+@media (min-width: 992px) {
+  #box4 .container .row .col {
+    padding: 50px;
+  }
+}
+#box4 .container .row .col video {
+  width: clamp(15rem, 70vw, 30rem);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media (min-width: 1200px) {
+  #box4 .container .row .col video {
+    margin-top: 20%;
+    width: clamp(16rem, 70vw, 35rem);
+  }
+}
+@media (min-width: 1400px) {
+  #box4 .container .row .col video {
+    width: clamp(16rem, 70vw, 40rem);
+    margin-top: 0;
+  }
+}
+#box4 .container .row .col h1 {
+  margin-top: 50px;
+  font-size: clamp(3rem, 4vw, 6rem);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  #box4 .container .row .col h1 {
+    margin-top: 0;
+  }
+}
+#box4 .container .row .col p {
+  font-size: clamp(0.5rem, 0.5rem + 2vw, 1.1rem);
+  text-justify: auto;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+}
+@media (min-width: 992px) {
+  #box4 .container .row .col h1, #box4 .container .row .col p {
+    padding-left: 50px;
   }
 }
 
@@ -278,67 +307,6 @@ body {
   position: absolute;
   top: 0;
   z-index: 3;
-}
-
-/*Container for About Trumpets*/
-#box4 {
-  background-color: #1a1a1a;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  overflow: hidden;
-}
-@media (min-width: 992px) {
-  #box4 .container .row {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-  }
-}
-@media (min-width: 992px) {
-  #box4 .container .row .col {
-    padding: 50px;
-  }
-}
-#box4 .container .row .col video {
-  width: clamp(17rem, 70vw, 30rem);
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-@media (min-width: 1200px) {
-  #box4 .container .row .col video {
-    margin-top: 20%;
-    width: clamp(16rem, 70vw, 35rem);
-  }
-}
-@media (min-width: 1400px) {
-  #box4 .container .row .col video {
-    width: clamp(16rem, 70vw, 40rem);
-    margin-top: 0;
-  }
-}
-#box4 .container .row .col h1 {
-  margin-top: 50px;
-  font-size: clamp(3rem, 4vw, 6rem);
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-}
-@media (min-width: 992px) {
-  #box4 .container .row .col h1 {
-    margin-top: 0;
-  }
-}
-#box4 .container .row .col p {
-  font-size: clamp(0.3rem, 0.1rem + 4vw, 1.1rem);
-  text-justify: auto;
-  color: white;
-  font-family: "Century Gothic", sans-serif;
-}
-@media (min-width: 992px) {
-  #box4 .container .row .col h1, #box4 .container .row .col p {
-    padding-left: 50px;
-  }
 }
 
 /*Container for Testimonials*/
