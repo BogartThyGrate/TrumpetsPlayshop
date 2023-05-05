@@ -44,9 +44,10 @@ main .container p {
   background-color: #ff6c6c;
 }
 .performance #content #theaterImg {
-  background-image: url("/img/theater.jpg");
+  background-image: url("/img/theater.webp");
   background-size: cover;
   background-position-y: 70%;
+  background-position-x: 70%;
 }
 .performance #content #danceImg {
   background-image: url("/img/dancingbg.webp");
@@ -55,6 +56,7 @@ main .container p {
 .performance #content #musicImg {
   background-image: url("/img/musicbg.webp");
   background-size: cover;
+  background-position-x: center;
 }
 
 .power {
@@ -90,13 +92,13 @@ main .container p {
   background-position-y: 4%;
 }
 .premium #content .row #playhouseImg {
-  background-image: url("/img/playhouse.jpg");
+  background-image: url("/img/playhouse.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .premium #content .row #adpImg {
-  background-image: url("/img/adp.jpg");
+  background-image: url("/img/adp.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -140,11 +142,16 @@ main .container p {
   background-color: white;
 }
 .performance #content #summerstockText, .performance #content #playhouseText, .performance #content #adpText, .performance #content #PublicSpeakingText, .performance #content #ModelingText, .performance #content #theaterText, .performance #content #danceText, .performance #content #musicText, .power #content #summerstockText, .power #content #playhouseText, .power #content #adpText, .power #content #PublicSpeakingText, .power #content #ModelingText, .power #content #theaterText, .power #content #danceText, .power #content #musicText, .premium #content #summerstockText, .premium #content #playhouseText, .premium #content #adpText, .premium #content #PublicSpeakingText, .premium #content #ModelingText, .premium #content #theaterText, .premium #content #danceText, .premium #content #musicText {
-  padding-top: 8%;
+  padding-top: 20%;
+}
+@media (min-width: 1200px) {
+  .performance #content #summerstockText, .performance #content #playhouseText, .performance #content #adpText, .performance #content #PublicSpeakingText, .performance #content #ModelingText, .performance #content #theaterText, .performance #content #danceText, .performance #content #musicText, .power #content #summerstockText, .power #content #playhouseText, .power #content #adpText, .power #content #PublicSpeakingText, .power #content #ModelingText, .power #content #theaterText, .power #content #danceText, .power #content #musicText, .premium #content #summerstockText, .premium #content #playhouseText, .premium #content #adpText, .premium #content #PublicSpeakingText, .premium #content #ModelingText, .premium #content #theaterText, .premium #content #danceText, .premium #content #musicText {
+    padding-top: 8%;
+  }
 }
 .performance #content #summerstockText h1, .performance #content #playhouseText h1, .performance #content #adpText h1, .performance #content #PublicSpeakingText h1, .performance #content #ModelingText h1, .performance #content #theaterText h1, .performance #content #danceText h1, .performance #content #musicText h1, .power #content #summerstockText h1, .power #content #playhouseText h1, .power #content #adpText h1, .power #content #PublicSpeakingText h1, .power #content #ModelingText h1, .power #content #theaterText h1, .power #content #danceText h1, .power #content #musicText h1, .premium #content #summerstockText h1, .premium #content #playhouseText h1, .premium #content #adpText h1, .premium #content #PublicSpeakingText h1, .premium #content #ModelingText h1, .premium #content #theaterText h1, .premium #content #danceText h1, .premium #content #musicText h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 700;
   font-family: "Gotham Bold", sans-serif;
 }
@@ -160,4 +167,8 @@ main .container p {
 footer {
   z-index: 2;
   position: relative;
+}
+
+img {
+  pointer-events: none;
 }/*# sourceMappingURL=class.css.map */

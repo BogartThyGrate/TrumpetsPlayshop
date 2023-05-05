@@ -49,9 +49,10 @@ main{
     #content{
         
         #theaterImg{
-            background-image: url("/img/theater.jpg");
+            background-image: url("/img/theater.webp");
             background-size: cover;
             background-position-y: 70%;
+            background-position-x: 70%;
         }
         #danceImg{
             background-image: url("/img/dancingbg.webp");
@@ -60,6 +61,7 @@ main{
         #musicImg{
             background-image: url("/img/musicbg.webp");
             background-size: cover;
+            background-position-x: center;
         }
     }
 }
@@ -99,14 +101,14 @@ main{
                 background-position-y: 4%;
             }
             #playhouseImg{
-                background-image: url("/img/playhouse.jpg");
+                background-image: url("/img/playhouse.webp");
                 background-size:cover;
                 background-repeat: no-repeat;
                 background-position: center;
 
             }
             #adpImg{
-                background-image: url("/img/adp.jpg");
+                background-image: url("/img/adp.webp");
                 background-size:cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -160,10 +162,13 @@ main{
             }
         }
         #summerstockText, #playhouseText, #adpText, #PublicSpeakingText, #ModelingText, #theaterText, #danceText, #musicText{
-            padding-top: 8%;
+            padding-top:20%;   
+            @include media-breakpoint-up(xl){
+                 padding-top: 8%;
+            }
             h1{
                 text-align: center;
-                font-size: 3rem;
+                font-size: clamp(1.5rem, 5vw, 3rem);
                 font-weight: 700;
                 font-family: 'Gotham Bold', sans-serif;
             }
@@ -181,4 +186,8 @@ main{
 footer{
     z-index: 2;
     position: relative;
+}
+
+img{
+    pointer-events: none;
 }
