@@ -1,179 +1,226 @@
-@import url("../node_modules/bootstrap/scss/mixins");
-@import url("../node_modules/bootstrap/scss/functions");
-@import url("../node_modules/bootstrap/scss/variables");
 @import url("https://fonts.cdnfonts.com/css/gotham-bold");
 @import url("https://fonts.cdnfonts.com/css/century-gothic");
 @import url("https://fonts.cdnfonts.com/css/roboto");
+@import url("https://fonts.cdnfonts.com/css/odin-rounded");
 #top {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-image: url("/img/TheaterBgPage.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 500px;
+  padding-bottom: 400px;
+  position: relative;
 }
-#top .container .row .col {
-  height: 500px;
-}
-#top .container .row #text {
-  margin-top: 20px;
+#top .container {
+  padding: 0;
+  position: absolute;
+  bottom: 15em;
+  left: 0;
+  right: 0;
+  margin: auto;
   text-align: center;
 }
-#top .container .row #text h1 {
-  font-size: clamp(1.5rem, 1rem + 5vw, 4.4rem);
+#top .container h1 {
+  font-size: clamp(3rem, 3rem + 5vw, 8rem);
+  color: white;
+  text-shadow: 15px 10px black;
+  font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
 }
-#top .container .row #text p {
-  font-size: clamp(0.6rem, 0.6rem + 4vw, 1.5rem);
-  font-family: "Century Gothic", sans-serif;
-}
-#top .container .row #text .btn {
-  background-color: #feb619;
-  text-align: center;
-  border: 2px solid black;
-  box-shadow: 5px 10px;
-  text-transform: capitalize;
-  font-size: clamp(1rem, 4vw, 2.25rem);
-}
-#top .container .row #img {
-  border: 1px solid black;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#top .container .row #img h1 {
-  -webkit-margin-before: auto;
-          margin-block-start: auto;
-  writing-mode: horizontal-tb;
+#top .container .btn {
+  background-color: #1eb6b7;
+  font-size: clamp(1rem, 1rem + 3vw, 3rem);
+  color: white;
+  box-shadow: 6px 10px black;
 }
 
-#theater {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #1EB6B7;
+#ct {
+  background-image: url("/img/ChildTheater.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+  position: relative;
 }
-#theater .container .row .col {
-  height: 500px;
+@media (min-width: 992px) {
+  #ct {
+    background-position-x: 50%;
+  }
 }
-#theater .container .row #text {
-  margin-top: 20px;
-  text-align: center;
+#ct .container {
+  position: absolute;
+  top: 15em;
 }
-#theater .container .row #text h1 {
-  font-size: clamp(1.5rem, 1rem + 5vw, 4.4rem);
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
+@media (min-width: 992px) {
+  #ct .container {
+    min-width: 300px;
+    max-width: 550px;
+    right: 2em;
+    top: 20em;
+  }
 }
-#theater .container .row #text p {
-  font-size: clamp(0.6rem, 0.6rem + 4vw, 1.5rem);
-  font-family: "Century Gothic", sans-serif;
+@media (min-width: 1200px) {
+  #ct .container {
+    right: 3em;
+  }
 }
-#theater .container .row #text .btn {
-  background-color: #FF6E6C;
-  text-align: center;
-  border: 2px solid black;
-  box-shadow: 5px 10px;
-  text-transform: capitalize;
-  font-size: clamp(1rem, 4vw, 2.25rem);
-}
-#theater .container .row #img {
-  border: 1px solid black;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#theater .container .row #img h1 {
-  -webkit-margin-before: auto;
-          margin-block-start: auto;
-  writing-mode: horizontal-tb;
+@media (min-width: 1400px) {
+  #ct .container {
+    right: 5em;
+    max-width: 800px;
+  }
 }
 
-#dance {
-  padding-top: 100px;
-  padding-bottom: 100px;
+#mtp {
+  background-image: url("/img/mtp.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  position: relative;
 }
-#dance .container .row .col {
-  height: 500px;
+@media (min-width: 992px) {
+  #mtp {
+    background-position: 60%;
+  }
 }
-#dance .container .row #text {
-  margin-top: 20px;
-  text-align: center;
+@media (min-width: 1400px) {
+  #mtp {
+    background-position: right;
+  }
 }
-#dance .container .row #text h1 {
-  font-size: clamp(1.5rem, 1rem + 5vw, 4.4rem);
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
+#mtp .container {
+  position: absolute;
+  top: 20em;
 }
-#dance .container .row #text p {
-  font-size: clamp(0.6rem, 0.6rem + 4vw, 1.5rem);
-  font-family: "Century Gothic", sans-serif;
+@media (min-width: 992px) {
+  #mtp .container {
+    min-width: 200px;
+    max-width: 500px;
+  }
 }
-#dance .container .row #text .btn {
-  background-color: #feb619;
-  text-align: center;
-  border: 2px solid black;
-  box-shadow: 5px 10px;
-  text-transform: capitalize;
-  font-size: clamp(1rem, 4vw, 2.25rem);
+@media (min-width: 1200px) {
+  #mtp .container {
+    min-width: 200px;
+    max-width: 600px;
+    left: 2em;
+  }
 }
-#dance .container .row #img {
-  border: 1px solid black;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#dance .container .row #img h1 {
-  -webkit-margin-before: auto;
-          margin-block-start: auto;
-  writing-mode: horizontal-tb;
+@media (min-width: 1400px) {
+  #mtp .container {
+    left: 5em;
+  }
 }
 
-#music {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #feb619;
+#mtt {
+  background-image: url("/img/mtt.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  position: relative;
 }
-#music .container .row .col {
-  height: 500px;
+@media (min-width: 992px) {
+  #mtt {
+    background-position-x: 80%;
+  }
 }
-#music .container .row #text {
-  margin-top: 20px;
-  text-align: center;
+#mtt .container {
+  position: absolute;
+  top: 20em;
 }
-#music .container .row #text h1 {
-  font-size: clamp(1.5rem, 1rem + 5vw, 4.4rem);
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
+@media (min-width: 992px) {
+  #mtt .container {
+    min-width: 300px;
+    max-width: 600px;
+    right: 6em;
+    top: 20em;
+  }
 }
-#music .container .row #text p {
-  font-size: clamp(0.6rem, 0.6rem + 4vw, 1.5rem);
-  font-family: "Century Gothic", sans-serif;
+@media (min-width: 1200px) {
+  #mtt .container {
+    right: 5em;
+  }
 }
-#music .container .row #text .btn {
-  background-color: #FF6E6C;
-  text-align: center;
-  border: 2px solid black;
-  box-shadow: 5px 10px;
-  text-transform: capitalize;
-  font-size: clamp(1rem, 4vw, 2.25rem);
+@media (min-width: 1400px) {
+  #mtt .container {
+    right: 5em;
+    max-width: 600px;
+  }
 }
-#music .container .row #img {
-  border: 1px solid black;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+#mta {
+  padding-top: 300px !important;
+  padding-bottom: 500px;
+  background-image: url("/img/mta.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: left;
+  position: relative;
 }
-#music .container .row #img h1 {
-  -webkit-margin-before: auto;
-          margin-block-start: auto;
-  writing-mode: horizontal-tb;
+@media (min-width: 1400px) {
+  #mta {
+    background-position-x: 1%;
+  }
+}
+#mta .container {
+  position: absolute;
+  top: 10em;
+}
+@media (min-width: 992px) {
+  #mta .container {
+    min-width: 200px;
+    max-width: 550px;
+    top: 15em;
+  }
+}
+@media (min-width: 1400px) {
+  #mta .container {
+    max-width: 700px;
+    left: 5em;
+    top: 10em;
+  }
+  #mta .container h1 {
+    text-align: center;
+  }
 }
 
 #reg {
+  overflow: hidden;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
+  background-color: #762797;
 }
 #reg .btn {
   background-color: #feb619;
   font-size: clamp(1rem, 1rem + 3vw, 3rem);
   border: 1px solid black;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#ct, #mtp, #mtt, #mtt, #mta {
+  padding-top: 525px;
+  padding-bottom: 500px;
+  overflow: hidden;
+  position: relative;
+}
+#ct .container, #mtp .container, #mtt .container, #mtt .container, #mta .container {
+  position: absolute;
+}
+#ct .container h1, #mtp .container h1, #mtt .container h1, #mtt .container h1, #mta .container h1 {
+  font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+@media (min-width: 1400px) {
+  #ct .container h1, #mtp .container h1, #mtt .container h1, #mtt .container h1, #mta .container h1 {
+    text-align: center;
+  }
+}
+#ct .container p, #mtp .container p, #mtt .container p, #mtt .container p, #mta .container p {
+  font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
+  font-family: "Century Gothic", sans-serif;
 }/*# sourceMappingURL=theater.css.map */
