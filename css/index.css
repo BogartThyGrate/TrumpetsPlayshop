@@ -182,10 +182,17 @@ body {
 
 /*Container for About Trumpets*/
 #box4 {
-  background-color: #1a1a1a;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  background-image: url("/img/bg-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
+  width: 100vw;
+  z-index: 1;
+  position: relative;
+  padding-left: 0;
 }
 @media (min-width: 992px) {
   #box4 .container .row {
@@ -240,6 +247,22 @@ body {
     padding-left: 50px;
   }
 }
+#box4 #box {
+  height: 18vh;
+  background: linear-gradient(to top, #1a1a1a 20%, transparent 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+#box4 #boxtop {
+  height: 18vh;
+  background: linear-gradient(to bottom, #1a1a1a 20%, transparent 100%);
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  left: 0;
+}
 
 /*This part if */
 /*Container for Different kinds of CLass*/
@@ -247,10 +270,7 @@ body {
   padding-top: 20vh;
   padding-bottom: 20vh;
   width: 100%;
-  background-image: url("/img/bg-img.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #1a1a1a;
   overflow: hidden;
   width: 100vw;
   z-index: 1;
@@ -383,4 +403,9 @@ body {
   height: 20vh;
   background-color: white;
   border: 1px solid black;
+}
+
+footer {
+  position: relative;
+  width: 100vw !important;
 }/*# sourceMappingURL=index.css.map */

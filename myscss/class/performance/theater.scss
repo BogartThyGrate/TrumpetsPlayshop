@@ -141,8 +141,7 @@
     background-position-x: left;
     position: relative;
 
-
-    @include media-breakpoint-only(xxl){
+    @include media-breakpoint-only(xl){
         background-position-x: 1%;
     }
     .container{

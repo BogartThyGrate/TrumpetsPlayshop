@@ -159,7 +159,7 @@
   background-position-x: left;
   position: relative;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1399.98px) {
   #mta {
     background-position-x: 1%;
   }
