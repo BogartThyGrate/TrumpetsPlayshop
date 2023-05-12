@@ -1,15 +1,20 @@
-@import url("../node_modules/bootstrap/scss/mixins");
-@import url("../node_modules/bootstrap/scss/functions");
-@import url("../node_modules/bootstrap/scss/variables");
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
 @import url('https://fonts.cdnfonts.com/css/gotham-bold');
 @import url('https://fonts.cdnfonts.com/css/century-gothic');
 @import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.cdnfonts.com/css/odin-rounded');
 
 
 #top{
-    padding-top: 400px;
-    padding-bottom: 400px;
+    padding-top: 500px;
+    padding-bottom: 500px;
     position: relative;
+    background-image: url("/img/DanceMainPage.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
     .container{
       text-align: center;
       position: absolute;
@@ -18,8 +23,7 @@
       margin: auto;
         h1{
             font-size: clamp(3rem, 3rem + 5vw, 8rem);
-            color: white;
-            text-shadow: 15px 10px black;
+            color: black;
             font-family: 'Gotham Bold', sans-serif;
             font-weight: 700;
         }
@@ -32,134 +36,62 @@
         }
     }
 }
-#theater{
+#thh{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #1EB6B7;
+    background-image: url("/img/toddlers.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
     .container{
-        .row{
-            .col{
-                height: 500px;
-            }
-            #text{
-                margin-top: 20px;
-                text-align: center;
-
-                h1{
-                    font-size: clamp(1.5rem, 1rem + 5vw, 4.4rem);
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                    text-transform: uppercase;
-                }
-                p{
-                    font-size: clamp(0.6rem, 0.6rem + 4vw, 1.5rem);
-                    font-family: 'Century Gothic', sans-serif;
-                }
-                .btn{
-                    background-color: #FF6E6C;
-                    text-align: center;
-                    border: 2px solid black;
-                    box-shadow: 5px 10px;
-                    text-transform: capitalize;
-                    font-size: clamp(1rem, 4vw, 2.25rem);
-                }
-            }
-            #img{
-                border: 1px solid black;
-                text-align: center;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                h1{
-                    margin-block-start:auto;
-                    writing-mode: horizontal-tb;
-                }
-            }
-        }
+        left: 6em;
+        top: 15em;
     }
 }
-#dance{
-    padding-top: 100px;
-    padding-bottom: 100px;
+#dck{
+    background-image: url("/img/DanceClassKids.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
     .container{
-        .row{
-            .col{
-                height: 500px;
-            }
-            #text{
-                margin-top: 20px;
-                text-align: center;
-
-                h1{
-                    font-size: clamp(1.5rem, 1rem + 5vw, 4.4rem);
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                    text-transform: uppercase;
-                }
-                p{
-                    font-size: clamp(0.6rem, 0.6rem + 4vw, 1.5rem);
-                    font-family: 'Century Gothic', sans-serif;
-                }
-                .btn{
-                    background-color: #feb619;
-                    text-align: center;
-                    border: 2px solid black;
-                    box-shadow: 5px 10px;
-                    text-transform: capitalize;
-                    font-size: clamp(1rem, 4vw, 2.25rem);
-                }
-            }
-            #img{
-                border: 1px solid black;
-                text-align: center;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                h1{
-                    margin-block-start:auto;
-                    writing-mode: horizontal-tb;
-                }
-            }
-        }
+        right:6em;
+        top: 15em;
     }
 }
-#music{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #feb619;
+#dct{
+    padding-top: 550px !important;
+    background-image: url("/img/DanceClassTeens.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
     .container{
-        .row{
-            .col{
-                height: 500px;
-            }
-            #text{
-                margin-top: 20px;
-                text-align: center;
+        left: 6em;
+    }
+  
+}
 
-                h1{
-                    font-size: clamp(1.5rem, 1rem + 5vw, 4.4rem);
-                    font-weight: 700;
-                    font-family: 'Roboto', sans-serif;
-                    text-transform: uppercase;
-                }
-                p{
-                    font-size: clamp(0.6rem, 0.6rem + 4vw, 1.5rem);
-                    font-family: 'Century Gothic', sans-serif;
-                }
-                .btn{
-                    background-color: #FF6E6C;
-                    text-align: center;
-                    border: 2px solid black;
-                    box-shadow: 5px 10px;
-                    text-transform: capitalize;
-                    font-size: clamp(1rem, 4vw, 2.25rem);
-                }
-            }
-            #img{
-                border: 1px solid black;
-                text-align: center;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                h1{
-                    margin-block-start:auto;
-                    writing-mode: horizontal-tb;
-                }
-            }
+
+#thh, #dck, #dct{
+    padding-top: 500px;
+    padding-bottom: 500px;
+    top: 20e,;
+    overflow: hidden;
+    position: relative;
+    .container{
+        position: absolute;
+        min-width: 200px;
+        max-width: 800px;
+        h1{
+            font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+         
+        }
+        p{
+            font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
+            font-family: 'Century Gothic', sans-serif;
         }
     }
 }
@@ -167,6 +99,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+    background-color: #762797;
     .btn{
         background-color: #feb619;
         font-size: clamp(1rem, 1rem + 3vw, 3rem );
