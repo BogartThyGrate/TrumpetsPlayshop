@@ -16,7 +16,17 @@
   padding: 0;
   position: absolute;
   top: clamp(20em, 10vw, 25em);
-  left: clamp(10em, 10vw, 25em);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 1200px) {
+  #top .container {
+    margin: 0;
+    left: 20em;
+  }
 }
 #top .container h1 {
   font-size: clamp(3rem, 3rem + 5vw, 8rem);
