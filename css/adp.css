@@ -6,7 +6,7 @@
   padding-top: 500px;
   padding-bottom: 500px;
   position: relative;
-  background-image: url("/img/DanceMainPage.webp");
+  background-image: url("/img/ADP-MAIN-PIC.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -19,9 +19,10 @@
   margin: auto;
 }
 #top .container h1 {
-  font-size: clamp(3rem, 3rem + 5vw, 8rem);
-  color: black;
+  font-size: clamp(3rem, 3rem + 5vw, 6rem);
+  color: white;
   font-family: "Gotham Bold", sans-serif;
+  text-shadow: 10px 10px #762797;
   font-weight: 700;
 }
 #top .container .btn {
@@ -111,4 +112,4 @@
   font-size: clamp(1rem, 1rem + 3vw, 3rem);
   border: 1px solid black;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=dance.css.map */
+}/*# sourceMappingURL=adp.css.map */

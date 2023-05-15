@@ -101,8 +101,8 @@ body {
 }
 #box1 .carousel .carousel-inner .carousel-item .title {
   position: absolute;
-  text-align: left;
-  top: 0;
+  min-width: 100px;
+  max-width: 700px !important;
 }
 #box1 .carousel .carousel-inner .carousel-item .title h5 {
   font-size: 1.8em;
@@ -110,7 +110,7 @@ body {
 }
 @media (min-width: 1400px) {
   #box1 .carousel .carousel-inner .carousel-item .title h5 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 #box1 .carousel .carousel-inner .carousel-item .power h5 {
@@ -143,20 +143,12 @@ body {
   min-width: 100%;
 }
 #box1 .carousel .carousel-inner .carousel-item .title, #box1 .carousel .carousel-inner .carousel-item .power, #box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .performance {
-  padding-block: min(44vh, 30rem);
   position: absolute;
   text-align: left;
-  top: 0;
-}
-@media (min-width: 768px) {
-  #box1 .carousel .carousel-inner .carousel-item .title, #box1 .carousel .carousel-inner .carousel-item .power, #box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .performance {
-    padding-block: min(40vh, 30rem);
-  }
-}
-@media (max-width: 767.98px) {
-  #box1 .carousel .carousel-inner .carousel-item .title, #box1 .carousel .carousel-inner .carousel-item .power, #box1 .carousel .carousel-inner .carousel-item .premium, #box1 .carousel .carousel-inner .carousel-item .performance {
-    padding-block: min(40vh, 30rem);
-  }
+  bottom: 0;
+  bottom: 10rem;
+  min-width: 100px;
+  max-width: 500px;
 }
 #box1 .carousel .carousel-inner .carousel-item .title h1, #box1 .carousel .carousel-inner .carousel-item .power h1, #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .performance h1 {
   font-size: clamp(1.5rem, 1.5rem + 2vw, 4rem);
@@ -229,10 +221,12 @@ body {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 @media (min-width: 992px) {
   #box4 .container .row .col h1 {
     margin-top: 0;
+    text-align: left;
   }
 }
 #box4 .container .row .col p {
