@@ -43,6 +43,37 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: bottom;
+}
+#dck{
+    background-image: url("/img/DanceClassKids.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    .container{
+        right: 2rem;
+        top: 15em;
+        min-width: 12em;
+        max-width: 33.5em;
+
+        @include media-breakpoint-up(md){
+            max-width: 50em;
+        }
+        @include media-breakpoint-up(lg){
+            right: 3em;
+        }
+    }
+}
+#dct{
+    padding-top: 550px !important;
+    background-image: url("/img/DanceClassTeens.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  
+}
+
+#thh, #dct{
     .container{
         left: 2rem;
         top: 15em;
@@ -57,29 +88,6 @@
         }
     }
 }
-#dck{
-    background-image: url("/img/DanceClassKids.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    .container{
-        right:6em;
-        top: 15em;
-    }
-}
-#dct{
-    padding-top: 550px !important;
-    background-image: url("/img/DanceClassTeens.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    .container{
-        left: 6em;
-    }
-  
-}
-
-
 #thh, #dck, #dct{
     padding-top: 500px;
     padding-bottom: 500px;

@@ -39,32 +39,29 @@
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
-#thh .container {
-  left: 2rem;
-  top: 15em;
-  min-width: 12em;
-  max-width: 33.5em;
-}
-@media (min-width: 768px) {
-  #thh .container {
-    max-width: 50em;
-  }
-}
-@media (min-width: 992px) {
-  #thh .container {
-    left: 6em;
-  }
-}
 
 #dck {
   background-image: url("/img/DanceClassKids.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
+  background-position-x: right;
 }
 #dck .container {
-  right: 6em;
+  right: 2rem;
   top: 15em;
+  min-width: 12em;
+  max-width: 33.5em;
+}
+@media (min-width: 768px) {
+  #dck .container {
+    max-width: 50em;
+  }
+}
+@media (min-width: 992px) {
+  #dck .container {
+    right: 3em;
+  }
 }
 
 #dct {
@@ -74,8 +71,22 @@
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
-#dct .container {
-  left: 6em;
+
+#thh .container, #dct .container {
+  left: 2rem;
+  top: 15em;
+  min-width: 12em;
+  max-width: 33.5em;
+}
+@media (min-width: 768px) {
+  #thh .container, #dct .container {
+    max-width: 50em;
+  }
+}
+@media (min-width: 992px) {
+  #thh .container, #dct .container {
+    left: 6em;
+  }
 }
 
 #thh, #dck, #dct {
