@@ -74,7 +74,6 @@
 
 #thh .container, #dct .container {
   left: 2rem;
-  top: 15em;
   min-width: 12em;
   max-width: 33.5em;
 }
@@ -92,12 +91,12 @@
 #thh, #dck, #dct {
   padding-top: 500px;
   padding-bottom: 500px;
-  top: 20e;
   overflow: hidden;
   position: relative;
 }
 #thh .container, #dck .container, #dct .container {
   position: absolute;
+  top: 20em;
 }
 #thh .container h1, #dck .container h1, #dct .container h1 {
   font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);

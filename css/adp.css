@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
+  overflow: hidden;
 }
 #top .container {
   text-align: center;
@@ -32,71 +33,103 @@
   box-shadow: 6px 10px black;
 }
 
-#thh {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-image: url("/img/toddlers.webp");
+#SongAndScences {
+  background-image: url("/img/ADP-Songs-and-Scenes.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
-#thh .container {
+
+#MonologuesAndScenes {
+  background-image: url("/img/ADP-Monologues.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+}
+
+#BasicPlaywriting {
+  padding-top: 550px !important;
+  background-image: url("/img/ADP-Playwrite.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+#StageDirecting {
+  background-image: url("/img/ADP-Stage-Directing.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+}
+
+#ActingForCommercials {
+  background-image: url("/img/ADP-Acting-for-Commercials.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+#IntroductiontoMeisnerinMusic {
+  background-image: url("/img/ADP-Intro-to-Meisner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+}
+
+#SongAndScences .container, #BasicPlaywriting .container, #ActingForCommercials .container {
   left: 2rem;
   top: 15em;
   min-width: 12em;
   max-width: 33.5em;
 }
 @media (min-width: 768px) {
-  #thh .container {
+  #SongAndScences .container, #BasicPlaywriting .container, #ActingForCommercials .container {
     max-width: 50em;
   }
 }
 @media (min-width: 992px) {
-  #thh .container {
+  #SongAndScences .container, #BasicPlaywriting .container, #ActingForCommercials .container {
     left: 6em;
   }
 }
 
-#dck {
-  background-image: url("/img/DanceClassKids.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-}
-#dck .container {
-  right: 6em;
+#MonologuesAndScenes .container, #StageDirecting .container, #IntroductiontoMeisnerinMusic .container {
+  right: 2rem;
   top: 15em;
+  min-width: 12em;
+  max-width: 33.5em;
+}
+@media (min-width: 768px) {
+  #MonologuesAndScenes .container, #StageDirecting .container, #IntroductiontoMeisnerinMusic .container {
+    max-width: 50em;
+  }
+}
+@media (min-width: 992px) {
+  #MonologuesAndScenes .container, #StageDirecting .container, #IntroductiontoMeisnerinMusic .container {
+    right: 3em;
+  }
 }
 
-#dct {
-  padding-top: 550px !important;
-  background-image: url("/img/DanceClassTeens.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-}
-#dct .container {
-  left: 6em;
-}
-
-#thh, #dck, #dct {
+#SongAndScences, #MonologuesAndScenes, #BasicPlaywriting, #StageDirecting, #ActingForCommercials, #IntroductiontoMeisnerinMusic {
   padding-top: 500px;
   padding-bottom: 500px;
-  top: 20e;
   overflow: hidden;
   position: relative;
 }
-#thh .container, #dck .container, #dct .container {
+#SongAndScences .container, #MonologuesAndScenes .container, #BasicPlaywriting .container, #StageDirecting .container, #ActingForCommercials .container, #IntroductiontoMeisnerinMusic .container {
   position: absolute;
 }
-#thh .container h1, #dck .container h1, #dct .container h1 {
+#SongAndScences .container h1, #MonologuesAndScenes .container h1, #BasicPlaywriting .container h1, #StageDirecting .container h1, #ActingForCommercials .container h1, #IntroductiontoMeisnerinMusic .container h1 {
   font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
-#thh .container p, #dck .container p, #dct .container p {
+#SongAndScences .container p, #MonologuesAndScenes .container p, #BasicPlaywriting .container p, #StageDirecting .container p, #ActingForCommercials .container p, #IntroductiontoMeisnerinMusic .container p {
   font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
   font-family: "Century Gothic", sans-serif;
 }
@@ -105,7 +138,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  background-color: #762797;
+  background-color: #f5f5f5;
 }
 #reg .btn {
   background-color: #feb619;
