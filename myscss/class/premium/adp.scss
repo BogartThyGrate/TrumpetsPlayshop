@@ -93,7 +93,7 @@
             max-width: 550px;
         }
         @include media-breakpoint-up(lg){
-            left: 6em;
+            left: 8em;
             margin: 0;
             right: auto;
             max-width: 650px;
@@ -113,7 +113,7 @@
             max-width: 550px;
         }
         @include media-breakpoint-up(lg){
-            right: 6em;
+            right: 8em;
             margin: 0;
             left: auto;
             max-width: 650px;

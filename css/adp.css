@@ -95,7 +95,7 @@
 }
 @media (min-width: 992px) {
   #SongAndScences .container, #BasicPlaywriting .container, #ActingForCommercials .container {
-    left: 6em;
+    left: 8em;
     margin: 0;
     right: auto;
     max-width: 650px;
@@ -118,7 +118,7 @@
 }
 @media (min-width: 992px) {
   #MonologuesAndScenes .container, #StageDirecting .container, #IntroductiontoMeisnerinMusic .container {
-    right: 6em;
+    right: 8em;
     margin: 0;
     left: auto;
     max-width: 650px;
