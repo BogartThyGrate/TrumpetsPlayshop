@@ -49,23 +49,7 @@
     @include media-breakpoint-up(lg){
         background-position-x: 50%;
     }
-    .container{
-        position: absolute;
-        top: 15em;
-        @include media-breakpoint-up(lg){     
-            min-width: 300px;
-            max-width: 550px;
-            right: 2em;
-            top: 20em;
-        }
-        @include media-breakpoint-up(xl){
-            right: 3em;
-        }
-        @include media-breakpoint-up(xxl){
-            right: 5em;
-            max-width: 800px;
-        }
-    }
+    
     
 }
 #mtp{// Musical Theater for pre-teens
@@ -83,24 +67,6 @@
         background-position: right;
     }
     
-    .container{
-        position: absolute;
-        top: 20em;
-
-        @include media-breakpoint-up(lg){
-            min-width: 200px;
-            max-width: 500px;
-            
-        }
-        @include media-breakpoint-up(xl){
-            min-width: 200px;
-            max-width: 600px;
-            left: 2em;
-        }
-        @include media-breakpoint-up(xxl){
-            left: 5em;
-        }
-    }
 }
 #mtt{//Musical Theater for teens
     background-image: url("/img/mtt.webp");
@@ -111,24 +77,6 @@
     position: relative;
     @include media-breakpoint-up(lg){
         background-position-x: 80%;
-    }
-    .container{
-        position: absolute;
-        top: 20em;
-
-        @include media-breakpoint-up(lg){     
-            min-width: 300px;
-            max-width: 600px;
-            right: 6em;
-            top: 20em;
-        }
-        @include media-breakpoint-up(xl){
-            right: 5em;
-        }
-        @include media-breakpoint-up(xxl){
-            right: 5em;
-            max-width: 600px;
-        }
     }
 }
 #mta{ //Musical Theater for Adult
@@ -144,24 +92,7 @@
     @include media-breakpoint-only(xl){
         background-position-x: 1%;
     }
-    .container{
-        position: absolute;
-        top: 10em;
-        @include media-breakpoint-up(lg){
-            min-width: 200px;
-            max-width: 550px;
-            top: 15em;
-        }
-        
-        @include media-breakpoint-only(xxl){
-            max-width: 700px;
-            left: 5em;
-            top: 10em;
-            h1{
-                text-align: center;
-            }
-        }
-    }
+    
 }
 #reg{
     overflow: hidden    ;
@@ -177,6 +108,51 @@
     }
 }
 
+#ct,#mtt{// text is on the right side
+    .container{
+        position: absolute;
+        top: 15em;
+        right: 0;
+        @include media-breakpoint-up(lg){     
+            min-width: 300px;
+            max-width: 550px;
+            right: 2em;
+            top: 20em;
+        }
+        @include media-breakpoint-up(xl){
+            right: 3em;
+        }
+        @include media-breakpoint-up(xxl){
+            right: 5em;
+            max-width: 800px;
+        }
+    }
+}
+#mtp, #mta{ // test is on the left side
+    .container{
+        position: absolute;
+        top: 10em;
+        left: 0;
+        @include media-breakpoint-up(lg){
+            min-width: 200px;
+            max-width: 550px;
+            top: 15em;
+        }
+        
+        @include media-breakpoint-only(xxl){
+            max-width: 700px;
+            left: 5em;
+            top: 10em;
+            h1{
+                text-align: center;
+            }
+        }
+        p{
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+}
 #ct, #mtp, #mtt, #mtt, #mta{
     padding-top: 525px;
     padding-bottom: 500px;
@@ -190,10 +166,8 @@
             font-weight: 700;
             font-family: 'Roboto', sans-serif;
             text-transform: uppercase;
-            
-            @include media-breakpoint-up(xxl){
-                text-align: center;
-            }
+            text-align: center;
+    
         }
         p{
             font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
