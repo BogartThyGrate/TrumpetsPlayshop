@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
+  overflow: hidden;
 }
 #top .container {
   text-align: center;
@@ -48,19 +49,25 @@
   background-position-x: right;
 }
 #dck .container {
-  right: 2rem;
+  right: 0rem;
+  left: 0;
+  margin: auto;
   top: 15em;
   min-width: 12em;
   max-width: 33.5em;
 }
 @media (min-width: 768px) {
   #dck .container {
-    max-width: 50em;
+    min-width: 300px;
+    max-width: 550px;
   }
 }
 @media (min-width: 992px) {
   #dck .container {
-    right: 3em;
+    margin: 0;
+    left: auto;
+    right: 6em;
+    max-width: 650px;
   }
 }
 
@@ -73,18 +80,24 @@
 }
 
 #thh .container, #dct .container {
-  left: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
   min-width: 12em;
   max-width: 33.5em;
 }
 @media (min-width: 768px) {
   #thh .container, #dct .container {
-    max-width: 50em;
+    min-width: 300px;
+    max-width: 550px;
   }
 }
 @media (min-width: 992px) {
   #thh .container, #dct .container {
     left: 6em;
+    margin: 0;
+    right: auto;
+    max-width: 650px;
   }
 }
 
@@ -108,6 +121,8 @@
 #thh .container p, #dck .container p, #dct .container p {
   font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
   font-family: "Century Gothic", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 #reg {
@@ -115,6 +130,7 @@
   padding-bottom: 100px;
   text-align: center;
   background-color: #762797;
+  overflow: hidden;
 }
 #reg .btn {
   background-color: #feb619;
