@@ -30,9 +30,9 @@ body {
     height: 95vh;
   }
 }
-@media (max-width: 991.98px) {
+@media (min-width: 992px) {
   #box1 { /*landscape phone, less than 768px*/
-    height: 95vh;
+    height: 101vh;
   }
 }
 #box1 nav {
@@ -61,7 +61,7 @@ body {
 }
 @media (min-width: 992px) {
   #box1 nav #container .collapse .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: black;
     width: 120px;
     text-align: center;
     font-size: 18px;
@@ -74,7 +74,6 @@ body {
 #box1 .carousel {
   width: 100%;
   position: absolute;
-  top: 0;
   left: 0;
   z-index: 1;
 }
@@ -147,7 +146,8 @@ body {
   text-align: left;
   bottom: 0;
   bottom: 10rem;
-  min-width: 100px;
+  min-width: -moz-min-content;
+  min-width: min-content;
   max-width: 500px;
 }
 #box1 .carousel .carousel-inner .carousel-item .title h1, #box1 .carousel .carousel-inner .carousel-item .power h1, #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .performance h1 {
@@ -166,9 +166,9 @@ body {
   bottom: 0;
   z-index: 3;
 }
-@media (max-width: 991.98px) {
+@media (min-width: 992px) {
   #box1 #box2 { /*landscape phone, less than 768px*/
-    height: 35vh;
+    height: 20vh;
   }
 }
 

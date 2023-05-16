@@ -55,11 +55,16 @@
     padding-bottom: 500px;
     position: relative;
     .container{
+        right: 1em;
+        min-width: 6em;
+        max-width: 33.5em;
         position: absolute;
-        bottom: 25em;
-        right:  clamp(5em, 10vw, 15em);
-        min-width: 100px;
-        max-width: 800px;
+        @include media-breakpoint-up(md){
+            max-width: 50em;
+        }
+        @include media-breakpoint-up(lg){
+            right: 6em;
+        }
         h1{
             text-align: center;
             font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);

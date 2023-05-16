@@ -52,11 +52,20 @@
   position: relative;
 }
 #star .container {
+  right: 1em;
+  min-width: 6em;
+  max-width: 33.5em;
   position: absolute;
-  bottom: 25em;
-  right: clamp(5em, 10vw, 15em);
-  min-width: 100px;
-  max-width: 800px;
+}
+@media (min-width: 768px) {
+  #star .container {
+    max-width: 50em;
+  }
+}
+@media (min-width: 992px) {
+  #star .container {
+    right: 6em;
+  }
 }
 #star .container h1 {
   text-align: center;
