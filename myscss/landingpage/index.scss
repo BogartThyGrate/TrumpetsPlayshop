@@ -69,6 +69,7 @@ nav{
                             width: 120px;
                             text-align: center;
                             font-size: 18px;
+                            color: white !important;
                         }
                     }
                     .nav-link:hover{
@@ -187,19 +188,16 @@ nav{
         }
     
     }
+    #boxtop{
+        height: 10vh;
+        background: linear-gradient(to bottom, #081012 20%, transparent 100%);
+        position: absolute;
+        z-index: 3;
+        left: 0;
+    }
 }
 /*Container for About Trumpets*/
 #box4{
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    background-image: url("/img/bg-img.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    width: 100vw;
-    z-index: 1;
-    position: relative;
-    padding-left: 0;
     .container{
 
         .row{
@@ -346,17 +344,6 @@ nav{
 
 /*Container for Testimonials*/
 #box5{
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    background-image: url("/img/bg-img.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    z-index: 1;
-    position: relative;
-    padding-left: 0;
-    overflow: hidden;
     .container{
         h1{
             text-align: center;
@@ -406,6 +393,22 @@ nav{
     }
     
 }
+
+
+/*this is for the background of box 4 and box 5*/
+#box4, #box5{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-image: url("/img/bg-img.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    padding-left: 0;
+}
 /*This container is for Partners*/
 #box6{
     padding-top: 20vh;
@@ -434,7 +437,13 @@ nav{
     }
 
 }
-
+#myBtn{
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    display: none;
+    z-index: 123242;
+}
 footer{
     position: relative;
     width: 100vw !important;

@@ -182,4 +182,12 @@
 #ct .container p, #mtp .container p, #mtt .container p, #mtt .container p, #mta .container p {
   font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
   font-family: "Century Gothic", sans-serif;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  display: none;
+  z-index: 123242;
 }/*# sourceMappingURL=theater.css.map */

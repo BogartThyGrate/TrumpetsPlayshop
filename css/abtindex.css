@@ -51,4 +51,12 @@
 }
 #trumpetsInc .row .col p {
   font-size: clamp(1rem, 1rem + 4vw, 1.5rem);
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  display: none;
+  z-index: 123242;
 }/*# sourceMappingURL=abtindex.css.map */

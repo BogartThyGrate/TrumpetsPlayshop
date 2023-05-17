@@ -53,6 +53,7 @@
 }
 #star .container {
   right: 1em;
+  top: 20em;
   min-width: 6em;
   max-width: 33.5em;
   position: absolute;
@@ -91,4 +92,11 @@
   font-size: clamp(1rem, 1rem + 3vw, 3rem);
   border: 1px solid black;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  display: none;
 }/*# sourceMappingURL=music.css.map */
