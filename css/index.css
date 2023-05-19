@@ -8,6 +8,7 @@ body {
 
 /*Containre for navigation and for carousel*/
 #box1 {
+  top: 0;
   width: 100vw;
   height: 75vh;
   position: relative;
@@ -79,24 +80,25 @@ body {
   z-index: 1;
 }
 #box1 .carousel .carousel-inner .carousel-item img {
-  height: 73vh;
+  height: 50vh;
+  border: 1px solid white;
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 575.98px) {
   #box1 .carousel .carousel-inner .carousel-item img { /*portrait phone, less than 576px*/
-    height: 73vh;
+    height: 50vh;
   }
 }
 @media (min-width: 576px) {
   #box1 .carousel .carousel-inner .carousel-item img {
-    height: 88vh;
+    height: 80vh;
   }
 }
 @media (max-width: 767.98px) {
   #box1 .carousel .carousel-inner .carousel-item img {
-    height: 93vh;
+    height: 80vh;
   }
 }
 #box1 .carousel .carousel-inner .carousel-item .title {
@@ -162,7 +164,7 @@ body {
 }
 #box1 #box2 {
   height: 16vh;
-  background: linear-gradient(to top, #081012 20%, transparent 100%);
+  background: linear-gradient(to top, #081012 55%, transparent 100%);
   position: absolute;
   bottom: 0;
   z-index: 3;

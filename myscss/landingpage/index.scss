@@ -13,6 +13,7 @@ body{
 }
 /*Containre for navigation and for carousel*/
 #box1{
+    top: 0;
     width: 100vw;
     height: 75vh;
     position: relative;
@@ -35,7 +36,7 @@ body{
 
 
     
-nav{
+    nav{
     position: relative;
     z-index: 3;
     background-color: transparent;
@@ -81,7 +82,7 @@ nav{
         }
     }
 
-}
+    }
     .carousel{
         width: 100%;
         position: absolute;
@@ -90,18 +91,19 @@ nav{
         .carousel-inner{
             .carousel-item{
                 img{
-                    height:73vh;
+                    height:50vh;
+                    border: 1px solid white;
                     min-width: 100%;
                     object-fit: cover;
                     @include media-breakpoint-down(sm){/*portrait phone, less than 576px*/
-                        height: 73vh;
+                        height: 50vh;
                     }
 
                     @include media-breakpoint-up(sm){// Small devices (landscape phones, 576px and up)
-                        height: 88vh;
+                        height: 80vh;
                     }
                     @include media-breakpoint-down(md){// `md` applies to small devices (landscape phones, less than 768px)
-                        height: 93vh;
+                        height: 80vh;
                     }
                  
                 }
@@ -179,7 +181,7 @@ nav{
     }
     #box2{
         height:16vh;
-        background: linear-gradient(to top, #081012 20%, transparent 100%);
+        background: linear-gradient(to top, #081012 55%, transparent 100%);
         position: absolute;
         bottom: 0;
         z-index: 3;
@@ -188,13 +190,14 @@ nav{
         }
     
     }
-    #boxtop{
+    #boxtop{ 
         height: 10vh;
         background: linear-gradient(to bottom, #081012 20%, transparent 100%);
         position: absolute;
         z-index: 3;
         left: 0;
     }
+
 }
 /*Container for About Trumpets*/
 #box4{
