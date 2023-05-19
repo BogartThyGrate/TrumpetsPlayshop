@@ -58,6 +58,11 @@
   box-shadow: 15px 15px 30px;
   height: 50em;
 }
+@media (min-width: 1200px) {
+  #trumpetsPlay .container .p-5 {
+    height: 37.5em;
+  }
+}
 
 #myBtn {
   position: fixed;
