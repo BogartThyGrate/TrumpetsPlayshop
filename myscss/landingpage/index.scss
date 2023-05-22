@@ -438,10 +438,13 @@ body{
             justify-content: center;
             .col{
                 
-                .p-5{
-                    height: 20vh;
-                    background-color: white;
-                    border: 1px solid black;
+                .p-3{
+                    text-align: center;
+                    img{
+                        width: 20em;
+                        aspect-ratio: 4/3;
+                        object-fit: contain;
+                    }
                 }
             }
         }
