@@ -355,6 +355,7 @@ body{
 
 /*Container for Testimonials*/
 #box5{
+    display: none;
     .container{
         h1{
             text-align: center;
@@ -411,7 +412,6 @@ body{
     padding-top: 20vh;
     padding-bottom: 20vh;
     background-image: url("/img/bg-img.webp");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -441,7 +441,7 @@ body{
                 .p-3{
                     text-align: center;
                     img{
-                        width: 20em;
+                        width: 15em;
                         aspect-ratio: 4/3;
                         object-fit: contain;
                     }
