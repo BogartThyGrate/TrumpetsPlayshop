@@ -1,0 +1,10 @@
+#myBtn {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  display: none;
+  background-color: #feb619;
+  border-radius: 50%;
+  border: 1px solid black;
+  z-index: 312490812348907;
+}/*# sourceMappingURL=upbtn.css.map */
