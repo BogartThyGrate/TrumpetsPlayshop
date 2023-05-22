@@ -42,7 +42,7 @@
                                 width: 120px;
                                 color: black;
                                 text-align: center;
-                                font-size: 18px;
+                                font-size: clamp(1rem,100%, 1.2rem);
                             }
                         }
                         .nav-link:hover{

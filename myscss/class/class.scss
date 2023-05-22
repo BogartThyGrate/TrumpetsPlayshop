@@ -98,23 +98,21 @@ main{
         .row{
             #summerstockImg{
                 background-image: url("/img/summerstock.webp");
-                background-size:cover;
-                background-repeat: no-repeat;
                 background-position-y: 4%;
             }
             #playhouseImg{
                 background-image: url("/img/playhouse.webp");
-                background-size:cover;
-                background-repeat: no-repeat;
                 background-position: center;
 
             }
             #adpImg{
                 background-image: url("/img/adp.webp");
-                background-size:cover;
-                background-repeat: no-repeat;
                 background-position: center;
 
+            }
+            #summerstockImg,#playhouseImg,#adpImg{
+                background-size:cover;
+                background-repeat: no-repeat;
             }
             #summerstockText{
                 
@@ -165,6 +163,10 @@ main{
         }
         #summerstockText, #playhouseText, #adpText, #PublicSpeakingText, #ModelingText, #theaterText, #danceText, #musicText{
             padding-top:20%;   
+            
+            @include media-breakpoint-up(md){
+                padding-top:8%;
+            }
             @include media-breakpoint-up(xl){
                  padding-top: 8%;
             }

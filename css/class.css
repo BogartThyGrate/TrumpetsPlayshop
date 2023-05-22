@@ -87,21 +87,19 @@ main .container .btn {
 }
 .premium #content .row #summerstockImg {
   background-image: url("/img/summerstock.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 4%;
 }
 .premium #content .row #playhouseImg {
   background-image: url("/img/playhouse.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
 .premium #content .row #adpImg {
   background-image: url("/img/adp.webp");
+  background-position: center;
+}
+.premium #content .row #summerstockImg, .premium #content .row #playhouseImg, .premium #content .row #adpImg {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 @media (min-width: 1200px) {
   .premium #content .row #summerstockText {
@@ -143,6 +141,11 @@ main .container .btn {
 }
 .performance #content #summerstockText, .performance #content #playhouseText, .performance #content #adpText, .performance #content #PublicSpeakingText, .performance #content #ModelingText, .performance #content #theaterText, .performance #content #danceText, .performance #content #musicText, .power #content #summerstockText, .power #content #playhouseText, .power #content #adpText, .power #content #PublicSpeakingText, .power #content #ModelingText, .power #content #theaterText, .power #content #danceText, .power #content #musicText, .premium #content #summerstockText, .premium #content #playhouseText, .premium #content #adpText, .premium #content #PublicSpeakingText, .premium #content #ModelingText, .premium #content #theaterText, .premium #content #danceText, .premium #content #musicText {
   padding-top: 20%;
+}
+@media (min-width: 768px) {
+  .performance #content #summerstockText, .performance #content #playhouseText, .performance #content #adpText, .performance #content #PublicSpeakingText, .performance #content #ModelingText, .performance #content #theaterText, .performance #content #danceText, .performance #content #musicText, .power #content #summerstockText, .power #content #playhouseText, .power #content #adpText, .power #content #PublicSpeakingText, .power #content #ModelingText, .power #content #theaterText, .power #content #danceText, .power #content #musicText, .premium #content #summerstockText, .premium #content #playhouseText, .premium #content #adpText, .premium #content #PublicSpeakingText, .premium #content #ModelingText, .premium #content #theaterText, .premium #content #danceText, .premium #content #musicText {
+    padding-top: 8%;
+  }
 }
 @media (min-width: 1200px) {
   .performance #content #summerstockText, .performance #content #playhouseText, .performance #content #adpText, .performance #content #PublicSpeakingText, .performance #content #ModelingText, .performance #content #theaterText, .performance #content #danceText, .performance #content #musicText, .power #content #summerstockText, .power #content #playhouseText, .power #content #adpText, .power #content #PublicSpeakingText, .power #content #ModelingText, .power #content #theaterText, .power #content #danceText, .power #content #musicText, .premium #content #summerstockText, .premium #content #playhouseText, .premium #content #adpText, .premium #content #PublicSpeakingText, .premium #content #ModelingText, .premium #content #theaterText, .premium #content #danceText, .premium #content #musicText {
