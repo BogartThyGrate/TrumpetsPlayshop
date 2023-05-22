@@ -18,20 +18,21 @@
     background-position-y: bottom;
     overflow: hidden;
     .container{
-      text-align: center;
+      width: fit-content;
       position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto;
+      right: 20em;
+      top: 15em;
         h1{
             font-size: clamp(3rem, 3rem + 5vw, 8rem);
-            color: black;
+            color: #1eb6b7;
             font-family: 'Gotham Bold', sans-serif;
+            text-transform: uppercase;
             font-weight: 700;
+            text-shadow: 10px 10px  #feb619;
         }
         .btn{
 
-            background-color: #1eb6b7;
+            background-color: #feb619;
             font-size: clamp(1rem, 1rem + 3vw, 3rem );
             color: white;
             box-shadow:6px 10px black;
@@ -101,8 +102,8 @@
     }
 }
 #thh, #dck, #dct{
-    padding-top: 500px;
-    padding-bottom: 500px;
+    padding-top: 520px;
+    padding-bottom: 520px;
     overflow: hidden;
     position: relative;
     .container{
@@ -119,7 +120,7 @@
             font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
             font-family: 'Century Gothic', sans-serif;
             text-align: justify;
-            text-justify: inter-word;
+            
         }
     }
 }

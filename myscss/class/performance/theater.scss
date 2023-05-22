@@ -154,8 +154,8 @@
     }
 }
 #ct, #mtp, #mtt, #mtt, #mta{
-    padding-top: 525px;
-    padding-bottom: 500px;
+    padding-top: 520px;
+    padding-bottom: 520px;
     overflow: hidden;
     position: relative;
     .container{
@@ -172,6 +172,8 @@
         p{
             font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
             font-family: 'Century Gothic', sans-serif;
+            text-align: justify;
+            
         }
     }
 }

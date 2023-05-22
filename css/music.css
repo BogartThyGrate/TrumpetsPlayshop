@@ -34,6 +34,7 @@
   text-shadow: 15px 10px black;
   font-family: "Gotham Bold", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 #top .container .btn {
   background-color: #1eb6b7;
@@ -78,6 +79,7 @@
 #star .container p {
   font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
   font-family: "Century Gothic", sans-serif;
+  text-align: justify;
 }
 
 #reg {
