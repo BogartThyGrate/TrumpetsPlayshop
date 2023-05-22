@@ -92,7 +92,6 @@ body{
             .carousel-item{
                 img{
                     height:50vh;
-                    border: 1px solid white;
                     min-width: 100%;
                     object-fit: cover;
                     @include media-breakpoint-down(sm){/*portrait phone, less than 576px*/
@@ -186,7 +185,7 @@ body{
         bottom: 0;
         z-index: 3;
         @include media-breakpoint-up(lg){/*landscape phone, less than 768px*/
-            height: 20vh;
+            height: 13.1em;
         }
     
     }
@@ -243,10 +242,19 @@ body{
                     }
                     p{
                         font-size: clamp(0.5rem, 0.5rem + 2vw, 1.1rem);
-                        text-justify:auto;
+                        text-justify:inter-word;
+                        text-indent: 50px;
                         color: white;
                         font-family: 'Century Gothic', sans-serif;
-                                                
+                        max-width: 400px;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @include media-breakpoint-up(lg){
+                            margin-left: 0;
+                            margin-right: 0;
+                            max-width: 800px;
+                        }
                     }
             }
             .col{

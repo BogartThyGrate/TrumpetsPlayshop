@@ -81,7 +81,6 @@ body {
 }
 #box1 .carousel .carousel-inner .carousel-item img {
   height: 50vh;
-  border: 1px solid white;
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -171,7 +170,7 @@ body {
 }
 @media (min-width: 992px) {
   #box1 #box2 { /*landscape phone, less than 768px*/
-    height: 20vh;
+    height: 13.1em;
   }
 }
 #box1 #boxtop {
@@ -229,9 +228,20 @@ body {
 }
 #box4 .container .row .col p {
   font-size: clamp(0.5rem, 0.5rem + 2vw, 1.1rem);
-  text-justify: auto;
+  text-justify: inter-word;
+  text-indent: 50px;
   color: white;
   font-family: "Century Gothic", sans-serif;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  #box4 .container .row .col p {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 800px;
+  }
 }
 @media (min-width: 992px) {
   #box4 .container .row .col h1, #box4 .container .row .col p {
