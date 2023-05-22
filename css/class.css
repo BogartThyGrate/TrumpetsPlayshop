@@ -23,9 +23,6 @@ main {
     padding-bottom: 200px;
   }
 }
-main .container {
-  overflow: hidden;
-}
 main .container h1 {
   font-family: "Gotham Bold", sans-serif;
   font-size: clamp(2rem, 2rem + 5vw, 18rem);
@@ -37,6 +34,9 @@ main .container h1 {
 }
 main .container p {
   color: #e6e3e3;
+}
+main .container .btn {
+  box-shadow: 10px 15px black;
 }
 
 .performance {

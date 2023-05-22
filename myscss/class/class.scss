@@ -24,7 +24,7 @@ main{
         padding-bottom:200px;
     }
     .container{
-        overflow: hidden;
+       
         h1{
 
             font-family: 'Gotham Bold', sans-serif;
@@ -38,7 +38,9 @@ main{
         p{
             color: #e6e3e3;
         }
-        
+        .btn{
+            box-shadow: 10px 15px black;
+        }
         
     }
 
