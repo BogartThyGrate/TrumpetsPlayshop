@@ -25,13 +25,12 @@
         }
         ol{
             padding-left: 0;
-            list-style-position: inside;
             li{
                 list-style: none;
                 font-size: 16px;
-                margin-bottom: 6px;
+                font-family: 'Century Gothic', sans-serif;
+                                                
             }
-
         }
     }
     #social{
@@ -59,6 +58,18 @@
     @include media-breakpoint-up(xl){
         #menu, #classes, #partners{
             display: block;
+        }
+        #menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            ol{
+                display: flex;
+                flex-direction: row;
+                li{
+                    margin-right: 2rem;
+                }
+            }
         }
     }
 }

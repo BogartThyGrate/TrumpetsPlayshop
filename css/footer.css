@@ -18,12 +18,11 @@
 }
 #footer .col ol {
   padding-left: 0;
-  list-style-position: inside;
 }
 #footer .col ol li {
   list-style: none;
   font-size: 16px;
-  margin-bottom: 6px;
+  font-family: "Century Gothic", sans-serif;
 }
 #footer #social {
   margin-left: auto;
@@ -47,5 +46,17 @@
 @media (min-width: 1200px) {
   #footer #menu, #footer #classes, #footer #partners {
     display: block;
+  }
+  #footer #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #footer #menu ol {
+    display: flex;
+    flex-direction: row;
+  }
+  #footer #menu ol li {
+    margin-right: 2rem;
   }
 }/*# sourceMappingURL=footer.css.map */
