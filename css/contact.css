@@ -4,16 +4,23 @@
 @import url("https://fonts.cdnfonts.com/css/gotham-bold");
 @import url("https://fonts.cdnfonts.com/css/century-gothic");
 @import url("https://fonts.cdnfonts.com/css/roboto");
-.container {
-  padding-top: 150px;
-  padding-bottom: 150px;
+header {
+  padding: 400px 0 450px 0;
+  background-image: url("/img/CONTACT-US-MAIN-PIC.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-.container h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(2rem, 1.5rem + 4vw, 7.5rem);
+header h1 {
   text-align: center;
-}
-.container h3 {
-  text-align: center;
-  font-size: clamp(1rem, 0.8rem + 3vw, 3rem);
+  position: absolute;
+  bottom: 3.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 6.25rem;
+  text-shadow: 10px 10px black;
+  text-transform: uppercase;
 }/*# sourceMappingURL=contact.css.map */
