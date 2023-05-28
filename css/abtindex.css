@@ -26,7 +26,7 @@
   font-weight: 700;
   color: white;
   position: absolute;
-  bottom: 3em;
+  bottom: 1em;
   left: 0;
   right: 0;
   margin: auto;
@@ -74,4 +74,4 @@
   right: 3em;
   display: none;
   z-index: 123242;
-}/*# sourceMappingURL=abtindex.css.map */
+}
