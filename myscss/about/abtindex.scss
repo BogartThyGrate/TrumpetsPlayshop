@@ -38,17 +38,16 @@
  
 .content{
     padding: 100px 0 100px 0;
-    
     .container-fluid{
         display: flex;
         flex-direction: column;
     
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(xl){
             flex-direction: row;
         }
 
         .col{
-            padding: 50px 0 50px 0;
+            padding: 50px;
             h1{
                 text-align: center;
                 font-size: clamp( 1.5rem, 1rem + 10vw , 2rem);
@@ -57,18 +56,43 @@
             }
             p{
                 font-family: 'Century Gothic', sans-serif;
-                font-size: clamp( 0.5rem, 10vw , 1.5rem);
+                font-size: clamp( 0.5rem, 10vw , 1.4rem);
                 text-align: justify;
                 text-indent: 150px;
+                color: #6c757d;
+                
             }
         }
         .col2{
             order: -1;
             text-align: center;
-            @include media-breakpoint-up(lg){
+            @include media-breakpoint-up(xl){
                 order: 0;
             }
+
+            figure{
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
            
+        }
+        .t{
+            @include media-breakpoint-up(xl){
+                figure{
+                    img{
+                        margin-top: 12rem;
+                    }
+                }
+            }
+            @include media-breakpoint-up(xxl){
+                figure{
+                    img{
+                        margin-top: clamp(1em, 10vh, 12em);
+                    }
+                }
+            }
         }
     }
    
