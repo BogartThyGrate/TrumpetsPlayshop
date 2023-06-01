@@ -2,33 +2,282 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trumpets</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="icon" href="/img/logo.webp">
+    <link rel="stylesheet" href="/css/class.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/upbtn.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/test.css">
   </head>
+
   <body>
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-lg-3">
-        <div class="col">
-            performance
+    <header id="nav" style="background-color: #f5f5f5;" >
+      <nav class="navbar navbar-expand-lg mt-0" >
+        <div class="container-fluid container-xl" id="container">
+          <a class="navbar-brand" href="/index.html"><img src="/img/logo.webp" alt=""></a>
+          <button class="navbar-toggler" id="btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/html/about/index.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="/html/class/class.html" class="nav-link active">Classes</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="/html/contact/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">What's New</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col">
-            img
-        </div>
-        <div class="col">
-          power
-        </div>
-        <div class="col">
-          img
-        </div>
-        <div class="col">
-          premium
-        </div>
-        <div class="col">
-          img
+      </nav>
+    </header>
+    <main><!--This is the landing container-->
+        <section>
+          <div class="container">
+            <h1>Classes</h1>
+            <p>scroll down to see the different kinds of class</p>
+            <a href="#" class="btn" style="background-color: #feb619; text-transform: uppercase; font-size: 2rem; color: white;">register now</a>
+          </div>
+        </section>
+    </main>
+    <section class="container-fluid performance" id="contenttitle">
+      <div class="col col2" id="img">
+        <img src="/img/performanceBg.webp" alt="performance">
+      </div>
+      <div class="col">
+        <div class="container">
+          <h1>performance</h1>
+          <p>Classes under the Performance category are for kids ages 3.5 and up. These theater, dance, and singing classes introduce students to musical theater concepts and fundamentals, singing techniques, various dance styles, and ways to explore artistry, depending on age and skill level. 
+          </p>
         </div>
       </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </section>
+    <section class="container-fluid" id="content">
+      <div class="col" id="theaterText">
+            <div class="container">
+              <h1 >Theater</h1>
+              <p >Explore your artistry and let your imagination take flight with our fun and exciting theater workshops.</p>
+              <div class="text-center">
+                <a href="/html/class/performance/theater.html" class="btn">Learn More</a> 
+              </div>
+            </div>
+          </div>
+      <div class="col col2" id="theaterImg">
+      </div>
+    </section>
+    <section class="container-fluid" id="content">
+      <div class="col" id="danceImg"></div>
+      <div class="col" id="danceText">
+        <div class="container">
+          <h1>Dance</h1>
+        <p>Trumpets Playshop offers training that focuses specifically on techniques for dancing, from basic to intermediate. These classes are suited for different age groups and encourage students to explore and expand their dancing skills for the stage.            
+        </p>
+        <div class="text-center">
+          <a href="/html/class/performance/dance.html" class="btn">Learn More</a> 
+        </div>
+          
+        </div>
+      </div>      
+      </div>
+    </section>
+    <section class="container-fluid" id="content">
+      <div class="col" id="musicText">
+        <div class="container">
+          <h1>Music</h1>
+        <p>Our music classes aim to bring out the best singer in you. Get ready to learn the important skills you need to sing on stage with great technique, artistry, and confidence.
+          </p>
+          <div style="text-align: center;">
+            <a href="/html/class/performance/music.html" class="btn">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col2" id="musicImg">
+      </div>
+    </section>
+    <section class="container-fluid power" id="contenttitle">
+      <div class="col col2" id="img">
+        <img src="/img/powerbg.webp" alt="power">
+      </div>
+      <div class="col">
+        <div class="container">
+          <h1>Power</h1>
+          <p>Power classes are for students ages seven years old and above. These classes give you the power to Speak Up and Stand Out! Experienced and well-known professionals in the modeling and speech industry will be your mentors.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid" id="content">
+      <div class="col" id="PublicSpeakingText">
+        <div class="container ">
+          <h1>Public Speaking and Hosting</h1>
+        <p>
+          Our Public Speaking and Hosting class is designed to help you discover how to confidently speak in front of an audience. You will learn how to prepare and deliver a speech, how to properly interact with your audience, how to be more spontaneous onstage, and much more. This course is ideal for everyone who wants to improve their public speaking and presentation skills. 
+          </p>
+        </div>
+      </div>
+      <div class="col col2" id="PublicSpeakingImg">
+      </div>
+    </section>
+    <section class="container-fluid" id="content">
+      <div class="col" id="ModelingImg">
+      </div>
+      <div class="col" id="ModelingText">
+          <div class="container">
+            <h1>Modeling</h1>
+          <p>
+            Our Modeling Class will equip you with the skills of a professional! You’ll learn about all aspects of modeling – from how to present yourself at an agency or casting, how to pose, how to walk on a runway, and how to dress for success. This class will help you develop the skills and attitude every professional model needs to launch their careers in the industry
+            </p>
+          </div>
+      </div>      
+      </div>
+    </section>
+    <section class="container-fluid premium" id="contenttitle">
+      <div class="col">
+        <div class="container">
+          <h1>Premium</h1>
+          <p>Advanced students and aspiring theater professionals are trained through PLAYHOUSE (13 and up), SUMMERSTOCK (7- 12), and the ARTIST DEVELOPMENT PROGRAM (16 and up). Students get to work closely with well-respected and award winning directors, actors and choreographers. They will have a hands-on experience of what it’s really like to work on full professional productions of musical theater pieces. Premium classes give students the opportunity to be mentored by theater veterans and launch their theater careers.
+          </p>
+        </div>
+      </div>
+      <div class="col col2" id="img">
+        <img src="/img/performanceBg.webp" alt="performance">
+      </div>
+    </section>
+    <section class="container-fluid" id="content">
+      <div class="col" id="summerstockImg">
+      </div>
+      <div class="col" id="summerstockText">
+        <div class="container">
+          <h1 >Summerstock (Advanced)</h1>
+        <p>7 - 12 years old (Auditions Require) <br>
+          
+          Light up the stage with Summerstock! Our Summerstock class is an advanced program where students will learn the technical skills needed to perform on bigger stages and full productions. Whether it’s acting, singing, or movement, you’ll learn techniques to help improve your performance style. You’ll be taught by an experienced artist-teacher who will help you hone and discover your abilities as a young theater performer. 
+          </p>
+        </div>
+      </div>>      
+      </div>
+    </section>
+    <section class="container-fluid" id="content">    
+      <div class="col" id="playhouseText">
+        <div class="container">
+          <h1>Playhouse(Advanced)</h1>
+        <p>Auditions Required <br>
+
+          Trumpets Playshop’s Playhouse is a course for intermediate to advanced performers. Playhouse aims to help you further develop your technical abilities in acting, singing, and dancing and to prepare you for professional projects. Well-known practitioners in the theater industry will help you unlock your potential and push you to reach your highest level of performance. 
+          
+          </p>
+        </div>
+      </div>
+      <div class="col col2" id="playhouseImg">
+      </div>>      
+      </div>
+    </section>
+    <section class="container-fluid" id="content">    
+      <div class="col" id="adpImg">
+      </div>
+      <div class="col" id="adpText">
+        <div class="container">
+          <h1>Artist Development Program</h1>
+        <p>Also known as ADP, this is an intensive program made for aspiring and professional actors, directors, and writers who want to refine, improve, and develop their craft. Click the button to see more
+          </p>
+          <div style="text-align: center;">
+            <a href="/html/class/premium/adp.html" class="btn">View More</a>
+          </div>
+        </div>
+      </div>>      
+      </div>
+    </section>
+    <footer class="containre-fluid" id="footer">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-4">
+          <!--MENU-->
+       
+        <div class="col" id="social">
+          <div class="row">
+            <div class="col">
+              <img src="/img/logo.webp" alt="logo">
+            </div>
+          </div>
+        </div>
+          <div class="col text-end" id="social">
+              <div class="row row-cols-1">
+                <div class="col">
+                  <h5>FOLLOW US</h5>
+                  <div class="box">
+                    <a href="https://www.facebook.com/trumpetspplayshop"><box-icon type='logo' name='facebook-square' size="lg" color="white" animation="tada"></box-icon></a>
+                  <a href="https://twitter.com/trumpetsph?lang=en"><box-icon name='twitter' type='logo' size="lg" color="white" animation="tada"></box-icon></a>
+                  <a href="https://www.instagram.com/trumpetsph/"><box-icon name='instagram' type='logo' size="lg" color="white" animation="spin"></box-icon></a>
+                  <a href="https://www.youtube.com/@trumpetsplayshopofficial8460"><box-icon name='youtube' type='logo' size="lg" color="white" animation="tada"></box-icon></a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col col-12" id="menu">
+          <h5>MENU</h5>
+          <ol>
+            <li><a href="/index.html" class="text-decoration-none text-white">HOME</a></li>
+            <li><a href="/html/about/index.html" class="text-decoration-none text-white">About Us</a></li>
+            <li><a href="/html/class/class.html" class="text-decoration-none text-white">Class</a></li>
+            <li><a href="/html/contact/contact.html" class="text-decoration-none text-white">Contact Us</a></li>
+            <li><a href="/index.html" class="text-decoration-none text-white">What's New</a></li>
+          </ol>
+        </div>
+        <hr>
+        <div class="row row-cols-2">
+          <div class="col">
+            <p>© 2023 Trumpets Playshop. All Rights Reserved.</p>
+          </div>
+          <div class="col" style="text-align: end;">
+            <p><a href="#" style="text-decoration: none; color: white;">Privacy Policy</a> | <a href="#" style="text-decoration: none; color: white;"> Terms & Conditions</a> </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="btn top" id="myBtn" onclick="topFunction()"><!--This button is for scroll to top-->
+      <svg  height="24px" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 19V5"></path>
+        <path d="m5 12 7-7 7 7"></path>
+      </svg>
+    </button>
+  
+  <script> // script for scroll to top button
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+  </script>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>

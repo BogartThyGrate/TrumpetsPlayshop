@@ -10,7 +10,6 @@
 
 header{
     padding: 800px 0  0;
-    outline: 1px dashed red;
     background-image: url("/img/CONTACT-US-MAIN-PIC.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,9 +71,10 @@ main{
         }
         h5{
             font-size: clamp(1em, 1em + 1vw, 2em);
+            font-weight: normal !important;
         }
         h3{
-            font-size: clamp(2wem,  10vw, 4em);
+            font-size: clamp(2em,  10vw, 4em);
         }
         input{
             width: clamp(200px,200px +  20vw, 600px);
