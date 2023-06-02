@@ -10,14 +10,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
+  background-position-x: right;
   overflow: hidden;
 }
 #top .container {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  right: 20em;
   top: 15em;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  #top .container {
+    right: 12em;
+    left: 0;
+    margin: none;
+  }
 }
 #top .container h1 {
   font-size: clamp(3rem, 3rem + 5vw, 8rem);

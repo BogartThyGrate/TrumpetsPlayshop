@@ -4,7 +4,7 @@
 @import url("https://fonts.cdnfonts.com/css/odin-rounded");
 @import url("https://fonts.cdnfonts.com/css/playfair-display");
 header {
-  padding: 800px 0 0;
+  padding: 400px 0 400px 0;
   background-image: url("/img/CONTACT-US-MAIN-PIC.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,11 +15,6 @@ header {
 @media (min-width: 992px) {
   header {
     background-position: center top;
-  }
-}
-@media (min-width: 1400px) {
-  header {
-    padding: 400px 0 200px 0;
   }
 }
 header h1 {
