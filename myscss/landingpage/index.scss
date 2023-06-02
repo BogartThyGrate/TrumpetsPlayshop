@@ -1,0 +1,472 @@
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import url('https://fonts.cdnfonts.com/css/gotham-bold');
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/*Containre for navigation and for carousel*/
+#box1{
+    top: 0;
+    width: 100vw;
+    height: 75vh;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    @include media-breakpoint-down(sm){/*portrait phone, less than 576px*/
+        height: 75vh;
+    }
+    @include media-breakpoint-up(sm){// Small devices (landscape phones, 576px and up)
+        height: 90vh;
+    }
+    @include media-breakpoint-down(md){/*landscape phone, less than 768px*/
+        height: 95vh;
+    }
+    @include media-breakpoint-up(lg){/*landscape phone, less than 768px*/
+        height: 101vh;
+    }
+
+    /*This is for the breakpoint for downscreen*/
+
+
+    
+    nav{
+    position: relative;
+    z-index: 3;
+    background-color: transparent;
+    top: 0;
+    .navbar-toggler{
+        color: white;
+        background-color: white !important;
+    }
+    #container{
+        transition: 720ms;
+        .navbar-brand{
+            img{
+                height: auto;
+                width: 100px;
+            }
+        }
+        .collapse{
+
+            .navbar-nav{
+    
+                .nav-item{
+           
+                    .nav-link{
+                        border: 1px solid none;
+                        font-family: 'Roboto', sans-serif;
+                        margin-left: 0;
+                        transition: 0.5;
+                        white-space: nowrap;
+                        @include media-breakpoint-up(lg){
+                            color: black;
+                            width: 120px;
+                            text-align: center;
+                            font-size: 18px;
+                            color: white !important;
+                        }
+                    }
+                    .nav-link:hover{
+                        color: #feb619;
+                        border-bottom: 1px solid #feb619;
+                    }
+                }
+            }
+        }
+    }
+
+    }
+    .carousel{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height:50vh;
+                    min-width: 100%;
+                    object-fit: cover;
+                    @include media-breakpoint-down(sm){/*portrait phone, less than 576px*/
+                        height: 50vh;
+                    }
+
+                    @include media-breakpoint-up(sm){// Small devices (landscape phones, 576px and up)
+                        height: 80vh;
+                    }
+                    @include media-breakpoint-down(md){// `md` applies to small devices (landscape phones, less than 768px)
+                        height: 80vh;
+                    }
+                 
+                }
+                .title{
+                    position:absolute; 
+                    min-width: 100px;
+                    max-width: 700px !important;
+                    h5{
+                        font-size: 1.8em;
+                        font-family: 'Century Gothic', sans-serif;
+                        @include media-breakpoint-up(xxl){
+                            font-size: 2em;
+                        }
+                    }
+                }
+                .power{
+                    h5{
+                        font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+                        color: #e6e6e6;
+                        font-weight: 100;
+                        max-width: 50%;
+                        min-width: 100%;
+                    }
+                }
+                .premium{
+                    h5{
+                        font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+                        color: #e6e6e6;
+                        font-weight: 100;
+                        max-width: 20% ;
+                        min-width: 100%;
+                    }
+                }
+                .performance{
+                
+                    h1{
+                        font-size:clamp(1.3rem, 1.2rem + 3vw, 4rem) !important;
+                        @include media-breakpoint-down(lg){
+                            font-size: clamp(1.4rem, 1.4rem + 1vw, 4rem) !important;
+                        }
+                    }
+                    h5{
+                        font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
+                        color: #e6e6e6;
+                        font-weight: 100;
+                        max-width: 50%;
+                        min-width: 100%;
+                    }
+                }
+                .title, .power, .premium,.performance{
+                    position:absolute;
+                    text-align: left;
+                    bottom: 0;
+                    bottom: 10rem;
+                    min-width:min-content;
+                    max-width: 500px;
+                    h1{
+                        font-size:clamp(1.5rem, 1.5rem + 2vw, 4rem);
+                        font-family: 'Gotham Bold', sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+           
+
+                    }
+
+                }
+                .premium, .power{
+                    h1{
+                        letter-spacing: 5px;
+                    }
+                }
+             
+            }
+        }
+    }
+    #box2{
+        height:16vh;
+        background: linear-gradient(to top, #081012 55%, transparent 100%);
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        @include media-breakpoint-up(lg){/*landscape phone, less than 768px*/
+            height: 13.1em;
+        }
+    
+    }
+    #boxtop{ 
+        height: 10vh;
+        background: linear-gradient(to bottom, #081012 20%, transparent 100%);
+        position: absolute;
+        z-index: 3;
+        left: 0;
+    }
+    .active{
+        border:1px solid none;
+        border-bottom: 1px solid #feb619;
+        color: #feb619 !important;
+    }
+
+}
+/*Container for About Trumpets*/
+#box4{
+    .container{
+
+        .row{
+          @include media-breakpoint-up(lg){
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+          }
+            .col{   
+                @include media-breakpoint-up(lg){
+                    padding: 50px;
+                }
+                    video{
+                        width: clamp(15rem,70vw, 30rem);
+                        border-radius: 10px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                        
+                        @include media-breakpoint-up(xl){
+                            margin-top: 20%;
+                            width: clamp(16rem,70vw, 35rem);
+                        }
+                        @include media-breakpoint-up(xxl){
+                            width: clamp(16rem,70vw, 40rem);
+                            margin-top: 0;
+                        }
+                    }
+                    h1{
+                        margin-top: 50px;
+                        font-size: clamp(3rem,  4vw, 6rem);
+                        color: white;
+                        font-family: 'Roboto', sans-serif;  
+                        font-weight: 700;
+                        text-align: center;
+
+                        @include media-breakpoint-up(lg){
+                            margin-top: 0;
+                            text-align: left;
+                        }
+                    }
+                    p{
+                        font-size: clamp(0.5rem, 0.5rem + 2vw, 1.1rem);
+                        text-justify:inter-word;
+                        text-indent: 50px;
+                        color: white;
+                        font-family: 'Century Gothic', sans-serif;
+                        max-width: 400px;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @include media-breakpoint-up(lg){
+                            margin-left: 0;
+                            margin-right: 0;
+                            max-width: 800px;
+                        }
+                    }
+            }
+            .col{
+                h1,p{
+                    @include media-breakpoint-up(lg){
+                        padding-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+    #box{
+        height: 18vh;
+        background: linear-gradient(to top, #081012 20%, transparent 100%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+    }
+    #boxtop{
+        height: 18vh;
+        background: linear-gradient(to bottom, #081012 20%, transparent 100%);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        left: 0;
+    }
+}
+/*This part if */
+/*Container for Different kinds of CLass*/
+#box3{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    width: 100%;
+    background-color: #081012;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    padding-left: 0;
+    .container{
+        .title{
+            font-size: clamp(1em, 1em + 10vw, 6em);
+            font-family: 'Gotham Bold', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            text-align: center;
+        }
+        .row{
+            margin-top: 5%;
+            justify-content: center;
+            .col{ /* img */
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                img{
+                    height: auto;
+                    width: clamp(14rem, 6rem + 20vw, 25rem);
+                    object-fit: cover;
+                    border-radius: 15px;
+               
+                }
+            }
+            .col-12{ /* Button */
+
+                .btn{
+                    font-family: 'Roboto Medium', sans-serif;
+                    background-color: #feb619;
+                    font-size: 24px;
+                    font-weight: 700;
+                    box-shadow: 5px 10px #333333;
+                    color: white;
+                    letter-spacing: 3px;
+
+                }
+                .btn:hover{
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    #box{
+        height: 18vh;
+        background: linear-gradient(to top, #081012 20%, transparent 100%);
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+    }
+    #boxtop{
+        height: 18vh;
+        background: linear-gradient(to bottom, #081012 20%, transparent 100%);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
+}
+
+/*Container for Testimonials*/
+#box5{
+    display: none;
+    .container{
+        h1{
+            text-align: center;
+            color: white;
+            font-size: clamp(1em, 2em + 2vw, 5em);
+            font-family: 'Roboto', sans-serif;
+        }
+        .row{
+
+            .col{
+               
+                .p-5{
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: #feb619;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    width: clamp(15rem, 15rem + 10vw, 50rem);
+                    img{
+                        width: 80px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        text-indent: 50px;
+                    }
+                    
+                }    
+            }
+        }
+    }
+    #box{
+        height: 18vh;
+        background: linear-gradient(to top, #081012 20%, transparent 100%);
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+    }
+    #boxtop{
+        height: 18vh;
+        background: linear-gradient(to bottom, #081012 20%, transparent 100%);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
+    
+}
+
+
+/*this is for the background of box 4 and box 5*/
+#box4, #box5{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-image: url("/img/bg-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    padding-left: 0;
+}
+/*This container is for Partners*/
+#box6{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: #081012;
+    width: 100vw;
+    color: white;
+    overflow: hidden;
+    .container{
+        h1{
+            font-size: clamp(0.8em, 0.5em + 10vw, 6em);
+            font-family: 'Gotham Bold', sans-serif;
+            text-transform: uppercase;
+        }
+        .row{
+            justify-content: center;
+            .col{
+                
+                .p-3{
+                    text-align: center;
+                    img{
+                        width: 15em;
+                        aspect-ratio: 4/3;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+}
+#myBtn{
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    display: none;
+    z-index: 123242;
+    border-radius: 50%;
+  }
+footer{
+    position: relative;
+    width: 100vw !important;
+    background-color: #081012 !important;
+}
+

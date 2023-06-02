@@ -1,0 +1,66 @@
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import url('https://fonts.cdnfonts.com/css/gotham-bold');
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    nav{
+        
+        #container{
+            transition: 720ms;
+            .navbar-brand{
+                img{
+                    height: auto;
+                    width: 100px;
+                }
+            }
+            .collapse{
+    
+                .navbar-nav{
+        
+                    .nav-item{
+               
+                        .nav-link{
+                            border: 1px solid none;
+                            font-family: 'Roboto', sans-serif;
+                            margin-left: 0;
+                            transition: 0.5;
+                            white-space: nowrap;
+                            @include media-breakpoint-up(lg){
+                                width: 120px;
+                                color: black;
+                                text-align: center;
+                                font-size: clamp(1rem,100%, 1.2rem);
+                            }
+                        }
+                        .nav-link:hover{
+                            color: #feb619;
+                            border-bottom: 1px solid #feb619;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .active{
+            border:1px solid none;
+            border-bottom: 1px solid #feb619;
+            color: #feb619 !important;
+        }
+    
+    }
+    
+}

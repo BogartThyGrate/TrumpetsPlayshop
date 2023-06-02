@@ -1,0 +1,148 @@
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import url('https://fonts.cdnfonts.com/css/gotham-bold');
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.cdnfonts.com/css/odin-rounded');
+
+
+
+#top{
+    padding-top: 500px;
+    padding-bottom: 500px;
+    position: relative;
+    background-image: url("/img/DanceMainPage.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    overflow: hidden;
+    .container{
+      width: fit-content;
+      position: absolute;
+      top: 15em;
+      right: 0;
+      left: 0;
+      margin: auto;
+      @include media-breakpoint-up(xl){
+        right:12em;
+        left: 0;
+        margin: none;
+      }
+        h1{
+            font-size: clamp(3rem, 3rem + 5vw, 8rem);
+            color: #1eb6b7;
+            font-family: 'Gotham Bold', sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-shadow: 10px 10px  #feb619;
+        }
+        .btn{
+
+            background-color: #feb619;
+            font-size: clamp(1rem, 1rem + 3vw, 3rem );
+            color: white;
+            box-shadow:6px 10px black;
+        }
+    }
+}
+#thh{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("/img/toddlers.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+#dck{
+    background-image: url("/img/DanceClassKids.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    .container{
+        right: 0rem;
+        left: 0;
+        margin: auto;
+        top: 15em;
+        min-width: 12em;
+        max-width: 33.5em;
+
+        @include media-breakpoint-up(md){
+            min-width: 300px;
+            max-width: 550px;
+        }
+        @include media-breakpoint-up(lg){
+            margin: 0;
+            left: auto;
+            right: 6em;
+            max-width: 650px;
+        }
+    }
+}
+#dct{
+    padding-top: 550px !important;
+    background-image: url("/img/DanceClassTeens.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+#thh, #dct{
+    .container{
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-width: 12em;
+        max-width: 33.5em;
+
+        @include media-breakpoint-up(md){
+            min-width: 300px;
+            max-width: 550px;
+        }
+        @include media-breakpoint-up(lg){
+            left: 6em;
+            margin: 0;
+            right: auto;
+            max-width: 650px;
+        }
+    }
+}
+#thh, #dck, #dct{
+    padding-top: 520px;
+    padding-bottom: 520px;
+    overflow: hidden;
+    position: relative;
+    .container{
+        position: absolute;
+        top: 20em;
+        h1{
+            font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p{
+            font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
+            font-family: 'Century Gothic', sans-serif;
+            text-align: justify;
+            
+        }
+    }
+}
+#reg{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #762797;
+    overflow: hidden;
+    .btn{
+        background-color: #feb619;
+        font-size: clamp(1rem, 1rem + 3vw, 3rem );
+        border: 1px solid black;
+        box-shadow:6px 10px  rgba(0, 0, 0, 0.2);
+    }
+}
+

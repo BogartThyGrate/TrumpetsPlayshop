@@ -219,7 +219,7 @@ main .container .btn {
 }
 .premium img {
   height: clamp(15em, 15em + 10vw, 30em);
-  border-radius: 20px;
+  border-radius: 0 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;

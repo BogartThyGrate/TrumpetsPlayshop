@@ -184,11 +184,3 @@
   font-family: "Century Gothic", sans-serif;
   text-align: justify;
 }
-
-#myBtn {
-  position: fixed;
-  bottom: 3em;
-  right: 3em;
-  display: none;
-  z-index: 123242;
-}

@@ -161,11 +161,3 @@
   border: 1px solid black;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.2);
 }
-
-#myBtn {
-  position: fixed;
-  bottom: 3em;
-  right: 3em;
-  display: none;
-  z-index: 123242;
-}

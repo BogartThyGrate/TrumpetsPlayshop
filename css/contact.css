@@ -93,6 +93,8 @@ main .container-fluid .btn {
   background-color: #1EB6B7;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  box-shadow: 10px 5px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 6.25em;
+  box-shadow: 10px 5px black;
 }

@@ -56,8 +56,13 @@
   font-family: "Century Gothic", sans-serif;
   font-size: clamp(0.5rem, 10vw, 1.4rem);
   text-align: justify;
-  text-indent: 150px;
+  text-indent: 50px;
   color: #6c757d;
+}
+@inclue media-breakpoint-up(lg) {
+  .content .container-fluid .col p {
+    text-indent: 150px;
+  }
 }
 .content .container-fluid .col2 {
   order: -1;
@@ -81,12 +86,4 @@
   .content .container-fluid .t figure img {
     margin-top: clamp(1em, 10vh, 12em);
   }
-}
-
-#myBtn {
-  position: fixed;
-  bottom: 3em;
-  right: 3em;
-  display: none;
-  z-index: 123242;
 }
