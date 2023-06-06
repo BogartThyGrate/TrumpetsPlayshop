@@ -12,6 +12,11 @@
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 992px) {
+  #top {
+    background-position: 70% bottom;
+  }
+}
 #top .container {
   padding: 0;
   position: absolute;
@@ -52,21 +57,34 @@
   padding-bottom: 500px;
   position: relative;
 }
+@media (min-width: 992px) {
+  #star {
+    background-position: 30% bottom;
+  }
+}
 #star .container {
   right: 1em;
   top: 20em;
-  min-width: 6em;
+  min-width: 12em;
   max-width: 33.5em;
   position: absolute;
 }
 @media (min-width: 768px) {
   #star .container {
-    max-width: 50em;
+    min-width: 300px;
+    max-width: 550px;
   }
 }
 @media (min-width: 992px) {
   #star .container {
     right: 6em;
+    max-width: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  #star .container {
+    right: 8em;
+    max-width: 850px;
   }
 }
 #star .container h1 {
@@ -94,4 +112,4 @@
   font-size: clamp(1rem, 1rem + 3vw, 3rem);
   border: 1px solid black;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.2);
-}
+}/*# sourceMappingURL=music.css.map */

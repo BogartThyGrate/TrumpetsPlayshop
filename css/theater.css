@@ -146,6 +146,7 @@
     min-width: 200px;
     max-width: 550px;
     top: 15em;
+    left: 3em;
   }
 }
 @media (min-width: 1400px) {
@@ -183,4 +184,4 @@
   font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
   font-family: "Century Gothic", sans-serif;
   text-align: justify;
-}
+}/*# sourceMappingURL=theater.css.map */

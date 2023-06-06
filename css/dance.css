@@ -3,8 +3,7 @@
 @import url("https://fonts.cdnfonts.com/css/roboto");
 @import url("https://fonts.cdnfonts.com/css/odin-rounded");
 #top {
-  padding-top: 500px;
-  padding-bottom: 500px;
+  padding: 300px 0 450px 0;
   position: relative;
   background-image: url("/img/DanceMainPage.webp");
   background-size: cover;
@@ -12,6 +11,17 @@
   background-position-y: bottom;
   background-position-x: right;
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  #top {
+    background-position: left bottom;
+    padding: 450px 0 450px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #top {
+    padding: 480px 0 480px 0;
+  }
 }
 #top .container {
   width: -moz-fit-content;
@@ -22,11 +32,12 @@
   left: 0;
   margin: auto;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #top .container {
-    right: 12em;
+    right: -32em;
     left: 0;
     margin: none;
+    top: 20em;
   }
 }
 #top .container h1 {
@@ -42,6 +53,7 @@
   font-size: clamp(1rem, 1rem + 3vw, 3rem);
   color: white;
   box-shadow: 6px 10px black;
+  margin: 0 auto 0 auto;
 }
 
 #thh {
@@ -148,4 +160,4 @@
   font-size: clamp(1rem, 1rem + 3vw, 3rem);
   border: 1px solid black;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.2);
-}
+}/*# sourceMappingURL=dance.css.map */

@@ -12,6 +12,7 @@
   left: 0;
   z-index: 10;
   overflow: hidden;
+  background-color: #f5f5f5;
 }
 #nav nav #container {
   transition: 720ms;
@@ -43,4 +44,4 @@
   border: 1px solid none;
   border-bottom: 1px solid #feb619;
   color: #feb619 !important;
-}
+}/*# sourceMappingURL=navbar.css.map */
