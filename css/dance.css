@@ -8,9 +8,13 @@
   background-image: url("/img/DanceMainPage.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
+  background-position: right bottom;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  #top {
+    background-position: 40% bottom;
+  }
 }
 @media (min-width: 992px) {
   #top {
@@ -32,9 +36,14 @@
   left: 0;
   margin: auto;
 }
+@media (min-width: 768px) {
+  #top .container {
+    right: clamp(-20em, 10vw, -30em);
+  }
+}
 @media (min-width: 992px) {
   #top .container {
-    right: -32em;
+    right: -38em;
     left: 0;
     margin: none;
     top: 20em;
@@ -69,8 +78,12 @@
   background-image: url("/img/DanceClassKids.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
+  background-position: right bottom;
+}
+@media (min-width: 992px) {
+  #dck {
+    background-position: 85% bottom;
+  }
 }
 #dck .container {
   right: 0rem;
@@ -103,6 +116,11 @@
   background-position-y: bottom;
 }
 
+@media (min-width: 992px) {
+  #thh, #dct {
+    background-position: 25% bottom;
+  }
+}
 #thh .container, #dct .container {
   left: 0;
   right: 0;
@@ -160,4 +178,4 @@
   font-size: clamp(1rem, 1rem + 3vw, 3rem);
   border: 1px solid black;
   box-shadow: 6px 10px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=dance.css.map */
+}

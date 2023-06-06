@@ -47,10 +47,8 @@
     position: relative;
 
     @include media-breakpoint-up(lg){
-        background-position-x: 50%;
+        background-position-x: 60%;
     }
-    
-    
 }
 #mtp{// Musical Theater for pre-teens
     background-image: url("/img/mtp.webp");
@@ -61,10 +59,10 @@
     position: relative;
 
     @include media-breakpoint-up(lg){
-        background-position: 60%;
+        background-position: 20%;
     }
     @include media-breakpoint-up(xxl){
-        background-position: right;
+        background-position: 35% bottom;
     }
     
 }
@@ -78,6 +76,7 @@
     @include media-breakpoint-up(lg){
         background-position-x: 80%;
     }
+
 }
 #mta{ //Musical Theater for Adult
     padding-top: 300px !important;
@@ -89,8 +88,13 @@
     background-position-x: left;
     position: relative;
 
-    @include media-breakpoint-only(xl){
-        background-position-x: 1%;
+
+    @include media-breakpoint-up(lg){
+        background-position: 2% !important;
+    }
+    @include media-breakpoint-up(xxl){
+        background-position: 15% 100%;
+        padding-bottom: 650px !important;
     }
     
 }
@@ -107,61 +111,31 @@
         box-shadow:6px 10px  rgba(0, 0, 0, 0.2);
     }
 }
-
-#ct,#mtt{// text is on the right side
-    .container{
-        position: absolute;
-        top: 15em;
-        right: 0;
-        @include media-breakpoint-up(lg){     
-            min-width: 300px;
-            max-width: 550px;
-            right: 2em;
-            top: 20em;
-        }
-        @include media-breakpoint-up(xl){
-            right: 3em;
-        }
-        @include media-breakpoint-up(xxl){
-            right: 5em;
-            max-width: 800px;
-        }
-    }
-}
-#mtp, #mta{ // test is on the left side
-    .container{
-        position: absolute;
-        top: 10em;
-        left: 0;
-        @include media-breakpoint-up(lg){
-            min-width: 200px;
-            max-width: 550px;
-            top: 15em;
-            left: 3em;
-        }
-        
-        @include media-breakpoint-only(xxl){
-            max-width: 700px;
-            left: 5em;
-            top: 10em;
-            h1{
-                text-align: center;
-            }
-        }
-        p{
-            text-align: justify;
-            text-justify: inter-word;
-        }
-    }
-}
 #ct, #mtp, #mtt, #mtt, #mta{
-    padding-top: 520px;
-    padding-bottom: 520px;
+    padding-top: 530px;
+    padding-bottom: 530px;
     overflow: hidden;
     position: relative;
+    
     .container{
         position: absolute;
-      
+        min-width: 100px;
+        max-width: 450px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include media-breakpoint-up(md){
+            max-width: 550px;
+        }
+       @include media-breakpoint-up(lg){
+            max-width: 590px;
+       }
+       @include media-breakpoint-up(xl){
+            max-width: 600px;
+       }
+       @include media-breakpoint-up(xxl){
+            max-width: 630px;
+       }
         h1{
             font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
             font-weight: 700;
@@ -175,6 +149,53 @@
             font-family: 'Century Gothic', sans-serif;
             text-align: justify;
             
+        }
+    }
+}
+
+#ct,#mtt{// text is on the right side
+    .container{
+        top: 15em;
+        right: 0;
+        @include media-breakpoint-up(md){
+            left: 0;
+            margin: auto;
+        }
+        @include media-breakpoint-up(lg){     
+            right: clamp(5.5em, 6em, 8em);
+            left: auto;
+            top: 20em;
+        }
+        @include media-breakpoint-up(xl){
+            right:  clamp(5.5em, 5em + 6vw, 20em);
+        }
+        @include media-breakpoint-up(xxl){
+            right: 5em;
+        }
+    }
+}
+#mtp, #mta{ // text is on the left side
+    .container{
+        top: 10em;
+        @include media-breakpoint-up(md){
+            right: 0;
+            margin: auto;
+        }
+        @include media-breakpoint-up(lg){
+            top: 15em;
+            left: clamp(5em, 4em + 1vw, 19em);
+            right: auto;
+        }
+        
+        @include media-breakpoint-only(xxl){
+            left: 5em;
+            h1{
+                text-align: center;
+            }
+        }
+        p{
+            text-align: justify;
+            text-justify: inter-word;
         }
     }
 }
