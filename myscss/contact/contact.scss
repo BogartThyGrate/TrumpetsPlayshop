@@ -28,7 +28,7 @@ header{
         margin: auto;
         color: white;
         font-family: 'Gotham Bold', sans-serif;
-        font-size: clamp(4rem, 3rem + 4vw, 6rem);
+        font-size: clamp(4rem, 4rem + 4vw, 6rem);
         text-shadow: 10px 10px black;
         text-transform: uppercase;
 
@@ -51,9 +51,10 @@ main{
         padding: 0 0 50px 0;
         h1{
             font-family: 'Roboto', sans-serif;
-            font-size: clamp(1.125rem, 10vw, 3.125em);
+            font-size: clamp(1.125rem, 10vw, 2.5em);
             font-weight: bold;
             text-align: center;
+            text-transform: uppercase;
         }
     }
     .container-fluid{
