@@ -17,6 +17,11 @@
     padding-bottom: 500px;
     position: relative;
     overflow: hidden;
+    
+    @include media-breakpoint-up(lg){
+        background-position: 70% bottom;
+    }
+
     .container{
         padding: 0;
         position: absolute;
@@ -55,17 +60,28 @@
     padding-top: 500px;
     padding-bottom: 500px;
     position: relative;
+
+    @include media-breakpoint-up(lg){
+        background-position: 30% bottom;
+    }
+
     .container{
         right: 1em;
         top: 20em;
-        min-width: 6em;
+        min-width: 12em;
         max-width: 33.5em;
         position: absolute;
         @include media-breakpoint-up(md){
-            max-width: 50em;
+            min-width: 300px;
+            max-width: 550px;
         }
         @include media-breakpoint-up(lg){
             right: 6em;
+            max-width: 650px;
+        }
+        @include media-breakpoint-up(xl){
+            right: 8em;
+            max-width: 850px;
         }
         h1{
             text-align: center;
