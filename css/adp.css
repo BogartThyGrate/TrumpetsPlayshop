@@ -54,6 +54,7 @@
   background-image: url("/img/ADP-Stage-Directing.webp");
   background-position-y: bottom;
   background-position-x: right;
+  color: white !important;
 }
 
 #ActingForCommercials {

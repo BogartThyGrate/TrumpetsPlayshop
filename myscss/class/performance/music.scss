@@ -66,22 +66,25 @@
     }
 
     .container{
-        right: 1em;
         top: 20em;
-        min-width: 12em;
-        max-width: 33.5em;
+        right: 0;
+        left: 0;
+        min-width: 50px;
+        max-width: 450px;
+        margin: auto;
         position: absolute;
         @include media-breakpoint-up(md){
             min-width: 300px;
             max-width: 550px;
         }
         @include media-breakpoint-up(lg){
-            right: 6em;
-            max-width: 650px;
+            right: clamp(2em,2em + 0.5vw, 16em);
+            left: auto;
+            max-width: 600px;
         }
         @include media-breakpoint-up(xl){
-            right: 8em;
-            max-width: 850px;
+            right: 15em;
+            max-width: 650px;
         }
         h1{
             text-align: center;
