@@ -158,6 +158,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+#box1 .carousel .carousel-inner .carousel-item .title h5, #box1 .carousel .carousel-inner .carousel-item .power h5, #box1 .carousel .carousel-inner .carousel-item .premium h5, #box1 .carousel .carousel-inner .carousel-item .performance h5 {
+  text-shadow: 1px 1px black;
+}
 #box1 .carousel .carousel-inner .carousel-item .premium h1, #box1 .carousel .carousel-inner .carousel-item .power h1 {
   letter-spacing: 5px;
 }

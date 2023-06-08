@@ -134,6 +134,7 @@ body{
                         font-weight: 100;
                         max-width: 20% ;
                         min-width: 100%;
+                       
                     }
                 }
                 .performance{
@@ -164,8 +165,10 @@ body{
                         font-family: 'Gotham Bold', sans-serif;
                         font-weight: 700;
                         text-transform: uppercase;
-           
-
+                    }
+                    h5{
+                        text-shadow: 1px 1px black;
+                        
                     }
 
                 }
