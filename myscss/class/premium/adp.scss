@@ -7,14 +7,11 @@
 @import url('https://fonts.cdnfonts.com/css/odin-rounded');
 
 #top{
-    padding-top: 500px;
-    padding-bottom: 500px;
     position: relative;
     background-image: url("/img/ADP-MAIN-PIC.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
+    background-position: center bottom;
     overflow: hidden;
     .container{
       text-align: center;
@@ -22,17 +19,18 @@
       left: 0;
       right: 0;
       margin: auto;
+      top: 1;
         h1{
-            font-size: clamp(3rem, 3rem + 5vw, 6rem);
+            font-size: clamp(1rem, 1rem + 4vw, 3rem);
             color: white;
             font-family: 'Gotham Bold', sans-serif;
-            text-shadow: 10px 10px #762797;
+            text-shadow: 5px 5px #762797;
             font-weight: 700;
         }
         .btn{
 
             background-color: #1eb6b7;
-            font-size: clamp(1rem, 1rem + 3vw, 3rem );
+            font-size: clamp(0.5rem, 0.5rem + 3vw, 1rem );
             color: white;
             box-shadow:6px 10px black;
         }
@@ -40,112 +38,94 @@
 }
 #SongAndScences{
     background-image: url("/img/ADP-Songs-and-Scenes.webp");
+    background-position: 20% bottom;
+    position: relative;
 }
 #MonologuesAndScenes{
     background-image: url("/img/ADP-Monologues.webp");
-    background-position-y: bottom;
-    background-position-x: right;
+    background-position: 80% bottom;
 }
 #BasicPlaywriting{
-    padding-top: 550px !important;
     background-image: url("/img/ADP-Playwrite.webp");
-    background-position-y: bottom;
+    background-position: 20% bottom;
 }
 #StageDirecting{
     background-image: url("/img/ADP-Stage-Directing.webp");
-    background-position-y: bottom;
-    background-position-x: right;
-    color: white !important;
+    color: white;
+    background-position: 60% bottom;
 }
 #ActingForCommercials{
     background-image: url("/img/ADP-Acting-for-Commercials.webp");
-    background-position-y: bottom;
-
-    @include media-breakpoint-up(lg){
-        background-position-x: 50% !important;
+    @include media-breakpoint-up(md){
+        background-position: center;
+    }
+    .container{
+        top: 1% !important;
     }
 }
 #IntroductiontoMeisnerinMusic{
     background-image: url("/img/ADP-Intro-to-Meisner.webp");
-    background-position-y: bottom;
-    background-position-x: right;
+    background-position: 70% bottom;
+    
+    @include media-breakpoint-up(md){
+        background-position: 30%;
+    }
+    .container{
+        top: 10% !important;
+    }
+}
+#SongAndScences, #BasicPlaywriting, #ActingForCommercials{// Text left  
+   .container{
+    left: 0;
+    @include media-breakpoint-up(md){
+        left: calc(30px + 1vw);
+    }
+    @include media-breakpoint-up(lg){
+        left: calc(60px + 1vw);
+    }
+   }
+}
+#MonologuesAndScenes, #StageDirecting, #IntroductiontoMeisnerinMusic{ //Text right
+    .container{
+        right: 0;
+        @include media-breakpoint-up(md){
+            right: calc(30px + 1vw);
+        }
+        @include media-breakpoint-up(lg){
+            right: calc(60px + 1vw);
+        }
+    }
 }
 #SongAndScences, #MonologuesAndScenes, #BasicPlaywriting, #StageDirecting, #ActingForCommercials, #IntroductiontoMeisnerinMusic{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#SongAndScences, #BasicPlaywriting,#ActingForCommercials{ //text is on the left
-    @include media-breakpoint-up(lg){
-        background-position-x: 80%;
-    }
-    .container{
-        left: 0;
-        right: 0;
-        margin: auto;
-        min-width: 12em;
-        max-width: 33.5em;
-        top: 15em;
-        @include media-breakpoint-up(md){
-            min-width: 300px;
-            max-width: 550px;
-        }
-        @include media-breakpoint-up(lg){
-            left: 3em;
-            margin: 0;
-            right: auto;
-            max-width: 650px;
-        }
-        @include media-breakpoint-up(xl){
-            left: 8em;
-        }
-    }
-}
-#MonologuesAndScenes,#StageDirecting,#IntroductiontoMeisnerinMusic{//text is on the right
-
-    @include media-breakpoint-up(lg){
-        background-position-x: 50%;
-    }
-    .container{
-        left: 0;
-        right: 0;
-        margin: auto;
-        min-width: 12em;
-        max-width: 33.5em;
-        top: 15em;
-        @include media-breakpoint-up(md){
-            min-width: 300px;
-            max-width: 550px;
-        }
-        @include media-breakpoint-up(lg){
-            right: 3em;
-            margin: 0;
-            left: auto;
-            max-width: 650px;
-        }
-        @include media-breakpoint-up(xl){
-            right: 8em;
-        }
-    }
-}
-#SongAndScences, #MonologuesAndScenes, #BasicPlaywriting,#StageDirecting,#ActingForCommercials,#IntroductiontoMeisnerinMusic {
-    padding: 500px 0 500px 0;
-    overflow: hidden;
     position: relative;
     .container{
+        min-width: 260px;
+        max-width: 400px;
         position: absolute;
+        top: 15%;
+        @include media-breakpoint-up(lg){
+            width: calc(400px + 3vw);
+        }
         h1{
-            font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
-            font-weight: 700;
-            font-family: 'Roboto', sans-serif;
+            font-size: calc(1rem + 2vw);
             text-transform: uppercase;
             text-align: center;
         }
         p{
-            font-size: clamp(0.9rem, 0.9rem + 4vw, 1rem);
-            font-family: 'Century Gothic', sans-serif;
+            font-size: clamp(0.5rem, 0.5rem + 3vw, 1rem);
             text-align: justify;
-            text-justify: inter-word;
+            text-indent: 50px;
         }
+    }
+}
+
+#top,#SongAndScences, #MonologuesAndScenes, #BasicPlaywriting,#StageDirecting,#ActingForCommercials,#IntroductiontoMeisnerinMusic {
+    padding: 200px 0 200px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(md){
+        padding: 300px 0 300px 0;
     }
 }
 #reg{
