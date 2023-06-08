@@ -77,13 +77,23 @@
   width: 100%;
   border-radius: 20px;
 }
+@media (min-width: 992px) {
+  .content .container-fluid .col2 figure img {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .content .container-fluid .col2 figure img {
+    width: 100%;
+  }
+}
 @media (min-width: 1200px) {
   .content .container-fluid .t figure img {
-    margin-top: 12rem;
+    margin-top: 8rem;
   }
 }
 @media (min-width: 1400px) {
   .content .container-fluid .t figure img {
-    margin-top: clamp(1em, 10vh, 12em);
+    margin-top: clamp(1em, 2vh, 9em);
   }
 }

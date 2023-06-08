@@ -77,6 +77,13 @@
                 img{
                     width: 100%;
                     border-radius: 20px;
+
+                    @include media-breakpoint-up(lg){
+                        width: 60%;
+                    }
+                    @include media-breakpoint-up(xl){
+                        width: 100%;
+                    }
                 }
             }
            
@@ -85,14 +92,14 @@
             @include media-breakpoint-up(xl){
                 figure{
                     img{
-                        margin-top: 12rem;
+                        margin-top: 8rem;
                     }
                 }
             }
             @include media-breakpoint-up(xxl){
                 figure{
                     img{
-                        margin-top: clamp(1em, 10vh, 12em);
+                        margin-top: clamp(1em, 2vh, 9em);
                     }
                 }
             }
