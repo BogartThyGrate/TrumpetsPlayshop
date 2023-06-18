@@ -176,6 +176,11 @@ body {
     height: 13.1em;
   }
 }
+@media (min-width: 1200px) {
+  #box1 #box2 {
+    height: 14em;
+  }
+}
 #box1 #boxtop {
   height: 10vh;
   background: linear-gradient(to bottom, #081012 20%, transparent 100%);

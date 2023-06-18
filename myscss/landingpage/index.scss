@@ -190,7 +190,9 @@ body{
         @include media-breakpoint-up(lg){/*landscape phone, less than 768px*/
             height: 13.1em;
         }
-    
+        @include media-breakpoint-up(xl){
+            height: 14em;
+        }    
     }
     #boxtop{ 
         height: 10vh;
