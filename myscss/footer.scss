@@ -1,9 +1,9 @@
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
-@import url('https://fonts.cdnfonts.com/css/gotham-bold');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
 @import url('https://fonts.cdnfonts.com/css/century-gothic');
-@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 
@@ -44,13 +44,14 @@
             }
             img{
                 display: block;
-                height: auto;
-                width: clamp(16rem, 2rem + 3vw, 25rem);
                 margin-left: auto;
                 margin-right: auto;
             }   
             .box{
                 text-align: center;
+                a{
+                    color: white;
+                }
             }
         }
     }

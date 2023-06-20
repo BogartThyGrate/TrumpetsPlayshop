@@ -1,16 +1,11 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
-@import url('https://fonts.cdnfonts.com/css/gotham-bold');
-@import url('https://fonts.cdnfonts.com/css/century-gothic');
-@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 
-body{
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
 /*Containre for navigation and for carousel*/
 #box1{
     top: 0;
@@ -83,6 +78,61 @@ body{
     }
 
     }
+    #nav{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        overflow: hidden;
+        background-color: #f5f5f5;
+        nav{
+            
+            #container{
+                transition: 720ms;
+                .navbar-brand{
+                    img{
+                        height: auto;
+                        width: 100px;
+                    }
+                }
+                .collapse{
+        
+                    .navbar-nav{
+            
+                        .nav-item{
+                   
+                            .nav-link{
+                                border: 1px solid none;
+                                font-family: 'Roboto', sans-serif;
+                                margin-left: 0;
+                                transition: 0.5;
+                                white-space: nowrap;
+                                @include media-breakpoint-up(lg){
+                                    width: 120px;
+                                    color: black;
+                                    text-align: center;
+                                    font-size: clamp(1rem,100%, 1.2rem);
+                                }
+                            }
+                            .nav-link:hover{
+                                color: #feb619;
+                                border-bottom: 1px solid #feb619;
+                            }
+                        }
+                    }
+                }
+                
+            }
+    
+            .active{
+                border:1px solid none;
+                border-bottom: 1px solid #feb619;
+                color: #feb619 !important;
+            }
+        
+        }
+        
+    }
     .carousel{
         width: 100%;
         position: absolute;
@@ -92,7 +142,7 @@ body{
             .carousel-item{
                 img{
                     height:50vh;
-                    min-width: 100%;
+                    width: 100%;
                     object-fit: cover;
                     @include media-breakpoint-down(sm){/*portrait phone, less than 576px*/
                         height: 50vh;
@@ -112,7 +162,7 @@ body{
                     max-width: 700px !important;
                     h5{
                         font-size: 1.8em;
-                        font-family: 'Century Gothic', sans-serif;
+                        font-family: 'Roboto', sans-serif;
                         @include media-breakpoint-up(xxl){
                             font-size: 2em;
                         }
@@ -162,7 +212,7 @@ body{
                     max-width: 500px;
                     h1{
                         font-size:clamp(1.5rem, 1.5rem + 2vw, 4rem);
-                        font-family: 'Gotham Bold', sans-serif;
+                        font-family: 'Playfair', serif;
                         font-weight: 700;
                         text-transform: uppercase;
                     }
@@ -255,7 +305,7 @@ body{
                         text-justify:inter-word;
                         text-indent: 50px;
                         color: white;
-                        font-family: 'Century Gothic', sans-serif;
+                        font-family: 'Roboto', sans-serif;
                         max-width: 400px;
                         margin-left: auto;
                         margin-right: auto;
@@ -293,7 +343,7 @@ body{
         left: 0;
     }
 }
-/*This part if */
+
 /*Container for Different kinds of CLass*/
 #box3{
     padding-top: 20vh;
@@ -305,10 +355,11 @@ body{
     z-index: 1;
     position: relative;
     padding-left: 0;
+  
     .container{
         .title{
             font-size: clamp(1em, 1em + 10vw, 6em);
-            font-family: 'Gotham Bold', sans-serif;
+            font-family: 'Playfair', serif;
             text-transform: uppercase;
             color: white;
             text-align: center;
@@ -317,12 +368,9 @@ body{
             margin-top: 5%;
             justify-content: center;
             .col{ /* img */
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
                 img{
                     height: auto;
-                    width: clamp(14rem, 6rem + 20vw, 25rem);
+                    width: clamp(14rem, 6rem + 20vw, 20rem);
                     object-fit: cover;
                     border-radius: 15px;
                
@@ -362,61 +410,6 @@ body{
         z-index: 3;
     }
 }
-
-/*Container for Testimonials*/
-#box5{
-    display: none;
-    .container{
-        h1{
-            text-align: center;
-            color: white;
-            font-size: clamp(1em, 2em + 2vw, 5em);
-            font-family: 'Roboto', sans-serif;
-        }
-        .row{
-
-            .col{
-               
-                .p-5{
-                    margin-left: auto;
-                    margin-right: auto;
-                    background-color: #feb619;
-                    border: 1px solid black;
-                    border-radius: 20px;
-                    width: clamp(15rem, 15rem + 10vw, 50rem);
-                    img{
-                        width: 80px;
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                    p{
-                        font-family: 'Roboto', sans-serif;
-                        text-indent: 50px;
-                    }
-                    
-                }    
-            }
-        }
-    }
-    #box{
-        height: 18vh;
-        background: linear-gradient(to top, #081012 20%, transparent 100%);
-        position: absolute;
-        bottom: 0;
-        z-index: 3;
-    }
-    #boxtop{
-        height: 18vh;
-        background: linear-gradient(to bottom, #081012 20%, transparent 100%);
-        position: absolute;
-        top: 0;
-        z-index: 3;
-    }
-    
-}
-
-
 /*this is for the background of box 4 and box 5*/
 #box4, #box5{
     padding-top: 20vh;
@@ -441,7 +434,7 @@ body{
     .container{
         h1{
             font-size: clamp(0.8em, 0.5em + 10vw, 6em);
-            font-family: 'Gotham Bold', sans-serif;
+            font-family: 'Playfair', serif;
             text-transform: uppercase;
         }
         .row{
@@ -461,17 +454,88 @@ body{
     }
 
 }
-#myBtn{
-    position: fixed;
-    bottom: 3em;
-    right: 3em;
-    display: none;
-    z-index: 123242;
-    border-radius: 50%;
-  }
+
 footer{
     position: relative;
     width: 100vw !important;
     background-color: #081012 !important;
 }
 
+#footer{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+
+    #menu, #classes, #partners{
+        display: none;
+    }
+    .col{
+        h5{
+            font-size: 24px;
+        }
+        ol{
+            padding-left: 0;
+            li{
+                list-style: none;
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                text-transform: uppercase;                                   
+            }
+        }
+    }
+    #social{
+        margin-left: auto;
+        margin-right: auto;
+        .col{
+            h5{
+                text-align: center;
+                font-size: clamp(1rem, 0.5rem + 4vw, 3rem);
+                font-family: 'Roboto', sans-serif;
+            }
+            img{
+                display: block;
+                height: auto;
+                width: clamp(16rem, 2rem + 3vw, 25rem);
+                margin-left: auto;
+                margin-right: auto;
+            }   
+            .box{
+                text-align: center;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        #menu, #classes, #partners{
+            display: block;
+        }
+        #menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            ol{
+                display: flex;
+                flex-direction: row;
+                li{
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+}
+#myBtn{
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    display: none;
+    background-color: #feb619;
+    border-radius: 20%;
+    z-index: 312490812348907;
+}

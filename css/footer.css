@@ -1,6 +1,6 @@
-@import url("https://fonts.cdnfonts.com/css/gotham-bold");
+@import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
 @import url("https://fonts.cdnfonts.com/css/century-gothic");
-@import url("https://fonts.cdnfonts.com/css/roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 #footer {
   padding-top: 50px;
   padding-bottom: 80px;
@@ -36,13 +36,14 @@
 }
 #footer #social .col img {
   display: block;
-  height: auto;
-  width: clamp(16rem, 2rem + 3vw, 25rem);
   margin-left: auto;
   margin-right: auto;
 }
 #footer #social .col .box {
   text-align: center;
+}
+#footer #social .col .box a {
+  color: white;
 }
 @media (min-width: 1200px) {
   #footer #menu, #footer #classes, #footer #partners {
