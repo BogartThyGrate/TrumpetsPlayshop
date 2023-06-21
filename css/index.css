@@ -334,7 +334,11 @@
   margin-top: 5%;
   justify-content: center;
 }
-#box3 .container .row .col { /* img */ }
+#box3 .container .row .col { /* img */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 #box3 .container .row .col img {
   height: auto;
   width: clamp(14rem, 6rem + 20vw, 20rem);

@@ -1,10 +1,8 @@
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
-@import url('https://fonts.cdnfonts.com/css/gotham-bold');
-@import url('https://fonts.cdnfonts.com/css/century-gothic');
-@import url('https://fonts.cdnfonts.com/css/roboto');
-@import url('https://fonts.cdnfonts.com/css/odin-rounded');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 
@@ -39,7 +37,7 @@
             font-size: clamp(3rem, 3rem + 5vw, 8rem);
             color: white;
             text-shadow: 15px 10px black;
-            font-family: 'Gotham Bold', sans-serif;
+            font-family: 'Playfair', serif;
             font-weight: 700;
             text-transform: uppercase;
         }
@@ -83,7 +81,7 @@
             max-width: 600px;
         }
         @include media-breakpoint-up(xl){
-            right: 15em;
+            right: 8em;
             max-width: 650px;
         }
         h1{
@@ -114,3 +112,138 @@
         box-shadow:6px 10px  rgba(0, 0, 0, 0.2);
     }
 }
+
+
+#footer{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+  
+    #menu, #classes, #partners{
+        display: none;
+    }
+    .col{
+        h5{
+            font-size: 24px;
+        }
+        ol{
+            padding-left: 0;
+            li{
+                list-style: none;
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                text-transform: uppercase;                                   
+            }
+        }
+    }
+    #social{
+        margin-left: auto;
+        margin-right: auto;
+        .col{
+            h5{
+                text-align: center;
+                font-size: clamp(1rem, 0.5rem + 4vw, 3rem);
+                font-family: 'Roboto', sans-serif;
+            }
+            img{
+                display: block;
+                height: auto;
+                width: clamp(16rem, 2rem + 3vw, 25rem);
+                margin-left: auto;
+                margin-right: auto;
+            }   
+            .box{
+                text-align: center;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+  
+    @include media-breakpoint-up(xl){
+        #menu, #classes, #partners{
+            display: block;
+        }
+        #menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            ol{
+                display: flex;
+                flex-direction: row;
+                li{
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+  }
+  #myBtn{
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    display: none;
+    background-color: #feb619;
+    border-radius: 20%;
+    z-index: 312490812348907;
+  }
+  #nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    nav{
+        
+        #container{
+            transition: 720ms;
+            .navbar-brand{
+                img{
+                    height: auto;
+                    width: 100px;
+                }
+            }
+            .collapse{
+    
+                .navbar-nav{
+        
+                    .nav-item{
+               
+                        .nav-link{
+                            border: 1px solid none;
+                            font-family: 'Roboto', sans-serif;
+                            margin-left: 0;
+                            transition: 0.5;
+                            white-space: nowrap;
+                            @include media-breakpoint-up(lg){
+                                width: 120px;
+                                color: black;
+                                text-align: center;
+                                font-size: clamp(1rem,100%, 1.2rem);
+                            }
+                        }
+                        .nav-link:hover{
+                            color: #feb619;
+                            border-bottom: 1px solid #feb619;
+                        }
+                    }
+                }
+            }
+            
+        }
+  
+        .active{
+            border:1px solid none;
+            border-bottom: 1px solid #feb619;
+            color: #feb619 !important;
+        }
+    
+    }
+    
+  }

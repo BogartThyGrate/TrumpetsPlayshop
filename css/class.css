@@ -1,9 +1,7 @@
-@import url("https://fonts.cdnfonts.com/css/gotham-bold");
-@import url("https://fonts.cdnfonts.com/css/century-gothic");
-@import url("https://fonts.cdnfonts.com/css/roboto");
-@import url("https://fonts.cdnfonts.com/css/odin-rounded");
+@import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
-  background-color: #f7f7f7;
+  background-color: #f7f7f7 !important;
   overflow-x: hidden;
 }
 
@@ -24,7 +22,7 @@ main {
   }
 }
 main .container h1 {
-  font-family: "Gotham Bold", sans-serif;
+  font-family: "Playfair", serif;
   font-size: clamp(2rem, 2rem + 5vw, 18rem);
   font-weight: 700;
   text-transform: uppercase;
@@ -47,7 +45,7 @@ main .container .btn {
 @media (min-width: 1200px) {
   #contenttitle {
     flex-direction: row;
-    padding: 200px 0 0 0;
+    padding: 150px 0 200px 0;
   }
 }
 
@@ -133,99 +131,22 @@ main .container .btn {
 .premium {
   background-color: #762797;
 }
-@media (min-width: 1200px) {
-  .premium .col .container h1 {
-    text-align: right;
-  }
-}
-.premium .col2 {
-  order: -1;
-}
-@media (min-width: 1200px) {
-  .premium .col2 {
-    order: 0;
-  }
-}
-.premium img {
-  height: clamp(15em, 15em + 10vw, 30em);
-}
-@media (min-width: 1200px) {
-  .premium img {
-    margin-left: 3em;
-    border-radius: 0 20px 0 0 !important;
-  }
-}
 
-.performance .col, .power .col {
-  width: 100%;
+.performance .container, .power .container, .premium .container {
+  width: 50%;
 }
-@media (min-width: 1200px) {
-  .performance .col, .power .col {
-    width: 50%;
-  }
-}
-.performance .col .container, .power .col .container {
-  width: 75%;
-  margin-top: clamp(5%, 10vw, 15%);
-}
-.performance .col .container h1, .power .col .container h1 {
+.performance .container h1, .power .container h1, .premium .container h1 {
   text-transform: uppercase;
-  font-size: 2rem;
-  font-family: "Gotham Bold", sans-serif;
+  font-size: clamp(2rem, 2rem + 2vw, 5.3rem);
+  font-family: "Playfair", serif;
   color: white;
   text-align: center;
 }
-@media (min-width: 1200px) {
-  .performance .col .container h1, .power .col .container h1 {
-    text-align: left;
-  }
-}
-.performance .col .container p, .power .col .container p {
+.performance .container p, .power .container p, .premium .container p {
   font-size: clamp(0.8rem, 4vw, 1rem);
   text-justify: inter-word;
   text-align: justify;
   color: white;
-}
-@media (min-width: 1200px) {
-  .performance img, .power img {
-    margin-right: 3em;
-  }
-}
-
-.performance .col, .power .col, .premium .col {
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 1200px) {
-  .performance .col, .power .col, .premium .col {
-    width: 50%;
-  }
-}
-.performance .col .container, .power .col .container, .premium .col .container {
-  width: 75%;
-  margin-top: clamp(5%, 10vw, 15%);
-}
-.performance .col .container h1, .power .col .container h1, .premium .col .container h1 {
-  text-transform: uppercase;
-  font-size: clamp(2rem, 2.5vw, 3.3rem);
-  font-family: "Gotham Bold", sans-serif;
-  color: white;
-  text-align: center;
-}
-.performance .col .container p, .power .col .container p, .premium .col .container p {
-  font-size: clamp(0.8rem, 4vw, 1rem);
-  text-justify: inter-word;
-  text-align: justify;
-  color: white;
-}
-.performance img, .power img, .premium img {
-  height: clamp(15em, 15em + 10vw, 30em);
-  border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #summerstockText, #playhouseText, #adpText, #PublicSpeakingText, #ModelingText, #theaterText, #danceText, #musicText {
@@ -245,7 +166,7 @@ main .container .btn {
   text-align: center;
   font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 700;
-  font-family: "Gotham Bold", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #summerstockText .container, #playhouseText .container, #adpText .container, #PublicSpeakingText .container, #ModelingText .container, #theaterText .container, #danceText .container, #musicText .container {
   min-width: 300px;

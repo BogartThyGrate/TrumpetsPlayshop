@@ -1,14 +1,12 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
-@import url('https://fonts.cdnfonts.com/css/gotham-bold');
-@import url('https://fonts.cdnfonts.com/css/century-gothic');
-@import url('https://fonts.cdnfonts.com/css/roboto');
-@import url('https://fonts.cdnfonts.com/css/odin-rounded');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 body{
-    background-color: #f7f7f7;
+    background-color: #f7f7f7 !important;
     overflow-x: hidden;
 }
 main{
@@ -28,7 +26,7 @@ main{
        
         h1{
 
-            font-family: 'Gotham Bold', sans-serif;
+          font-family: 'Playfair', serif;
             font-size: clamp(2rem, 2rem + 5vw, 18rem);
             font-weight: 700;
             text-transform: uppercase;
@@ -53,7 +51,7 @@ main{
   padding: 200px 0 50px 0;
   @include media-breakpoint-up(xl){
     flex-direction: row;
-    padding: 200px 0 0 0;
+    padding: 150px 0 200px 0;
   }
 }
 #content{
@@ -81,7 +79,7 @@ main{
     background-image: url("/img/theater.webp");
     background-size: cover;
     background-position-y: 70%;
-    background-position-x: 70%;
+    background-position-x: 70%; 
   }
   #danceImg{
     background-image: url("/img/dancingbg.webp");
@@ -128,95 +126,26 @@ main{
 }
 .premium{
   background-color: #762797;
-  .col{
-    
-    .container{
-      h1{
-        @include media-breakpoint-up(xl){
-          text-align: right;
-        }
-    }
-    }
-  }
-  .col2{
-    order: -1;
-    @include media-breakpoint-up(xl){
-      order: 0;
-    }
-  }
-  img{
-    height: clamp(15em, 15em + 10vw, 30em);
-    @include media-breakpoint-up(xl){
-      margin-left: 3em;
-      border-radius: 0 20px 0 0 !important;
-    }
-  }
+ 
 }
-.performance, .power{
-  .col{
-    width: 100%;
-    @include media-breakpoint-up(xl){
-      width: 50%;
-    }
-    .container{
-      width: 75%;
-      margin-top: clamp(5%, 10vw, 15%);
-      h1{
-        text-transform: uppercase;
-        font-size: clamp(1.5rem, 2rem, 3.3rem);
-        font-family: 'Gotham Bold', sans-serif;
-        color: white;
-        text-align: center;
-        @include media-breakpoint-up(xl){
-          text-align: left;
-        }
-    }
-    p{
-        font-size: clamp(0.8rem, 4vw, 1rem);
-        text-justify:inter-word;
-        text-align: justify;
-        color: white;
-    }
-    }
-  }
-  img{
-    @include media-breakpoint-up(xl){
-      margin-right: 3em;
-    }
-  }
-}
+
 .performance, .power, .premium{
-  .col{
-    width: 100%;
-    position: relative;
-    @include media-breakpoint-up(xl){
-      width: 50%;
-    }
-    .container{
-      width: 75%;
-      margin-top: clamp(5%, 10vw, 15%);
-      h1{
-        text-transform: uppercase;
-        font-size: clamp(2rem, 2.5vw, 3.3rem);
-        font-family: 'Gotham Bold', sans-serif;
-        color: white;
-        text-align: center;
-    }
-    p{
-        font-size: clamp(0.8rem, 4vw, 1rem);
-        text-justify:inter-word;
-        text-align: justify;
-        color: white;
-    }
-    }
+  .container{
+    width: 50%;
+
+    h1{
+      text-transform: uppercase;
+      font-size: clamp(2rem, 2rem + 2vw, 5.3rem);
+      font-family: 'Playfair', serif;
+      color: white;
+      text-align: center;
   }
-  img{
-    height: clamp(15em, 15em + 10vw, 30em);
-    border-radius: 20px;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  p{
+      font-size: clamp(0.8rem, 4vw, 1rem);
+      text-justify:inter-word;
+      text-align: justify;
+      color: white;
+  }
   }
 }
 
@@ -233,7 +162,8 @@ main{
       text-align: center;
       font-size: clamp(1.5rem, 5vw, 3rem);
       font-weight: 700;
-      font-family: 'Gotham Bold', sans-serif;
+      font-family: 'Roboto', sans-serif;
+
   }
   .container{
       min-width: 300px;
