@@ -18,10 +18,7 @@ header{
     }
     h1{
         text-align: center;
-        position: absolute;
-        bottom: 4em;
-        left: 0;
-        right: 0;
+        
         margin: auto;
         color: white;
         font-family: 'Playfair', serif;
@@ -36,7 +33,7 @@ header{
             bottom: 2.5em;
         }
         @include media-breakpoint-up(xxl){
-            bottom: 1em;
+            bottom: 2.3em;
         }
     }
 } 
