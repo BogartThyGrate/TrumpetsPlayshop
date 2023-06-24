@@ -1,7 +1,5 @@
-@import url("https://fonts.cdnfonts.com/css/gotham-bold");
-@import url("https://fonts.cdnfonts.com/css/century-gothic");
-@import url("https://fonts.cdnfonts.com/css/roboto");
-@import url("https://fonts.cdnfonts.com/css/odin-rounded");
+@import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 #top {
   position: relative;
   background-image: url("/img/ADP-MAIN-PIC.webp");
@@ -25,13 +23,13 @@
 }
 @media (min-width: 1400px) {
   #top .container {
-    bottom: 18vh;
+    bottom: 35vh;
   }
 }
 #top .container h1 {
   font-size: clamp(1rem, 1rem + 4vw, 3rem);
   color: white;
-  font-family: "Gotham Bold", sans-serif;
+  font-family: "Playfair", serif;
   text-shadow: 5px 5px #762797;
   font-weight: 700;
 }
@@ -47,7 +45,7 @@
 }
 #top .container .btn {
   background-color: #1eb6b7;
-  font-size: clamp(0.5rem, 0.5rem + 3vw, 1rem);
+  font-size: clamp(0.5rem, 0.5rem + 3vw, 1.8rem);
   color: white;
   box-shadow: 6px 10px black;
 }
@@ -64,7 +62,7 @@
   margin: auto;
 }
 #SongAndScences .container h1, #MonologuesAndScenes .container h1, #BasicPlaywriting .container h1, #StageDirecting .container h1, #ActingForCommercials .container h1, #IntroductiontoMeisnerinMusic .container h1 {
-  font-size: clamp(1rem, 1.5rem + 2vw, 6rem);
+  font-family: "Playfair", serif;
   text-transform: uppercase;
   text-align: center;
   font-family: "Century Gothic", sans-serif;

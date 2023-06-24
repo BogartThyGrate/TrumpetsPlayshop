@@ -27,8 +27,7 @@ main .container h1 {
   font-weight: 700;
   text-transform: uppercase;
   color: white;
-  text-shadow: 10px 4px #000000;
-  letter-spacing: -1px;
+  text-shadow: 5px 5px #000000;
 }
 main .container p {
   color: #e6e3e3;
@@ -123,6 +122,13 @@ main .container .btn {
 .performance {
   background-color: #ff6c6c;
 }
+.performance .container h1 {
+  text-transform: uppercase;
+  font-size: clamp(0.9rem, 0.8rem + 2vw, 5.3rem) !important;
+  font-family: "Playfair", serif;
+  color: white;
+  text-align: center;
+}
 
 .power {
   background-color: #1EB6B7;
@@ -137,7 +143,7 @@ main .container .btn {
 }
 .performance .container h1, .power .container h1, .premium .container h1 {
   text-transform: uppercase;
-  font-size: clamp(2rem, 2rem + 2vw, 5.3rem);
+  font-size: clamp(2rem, 1.5rem + 2vw, 5.3rem);
   font-family: "Playfair", serif;
   color: white;
   text-align: center;

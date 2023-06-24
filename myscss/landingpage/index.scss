@@ -5,7 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-
+*{
+    overflow-x: hidden;
+}
 /*Containre for navigation and for carousel*/
 #box1{
     top: 0;
@@ -138,8 +140,10 @@
         position: absolute;
         left: 0;
         z-index: 1;
+        overflow-x:hidden ;
         .carousel-inner{
             .carousel-item{
+                overflow-x:hidden ;
                 img{
                     height:50vh;
                     width: 100%;
@@ -160,6 +164,7 @@
                     position:absolute; 
                     min-width: 100px;
                     max-width: 700px !important;
+                    overflow-x:hidden ;
                     h5{
                         font-size: 1.8em;
                         font-family: 'Roboto', sans-serif;

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  overflow-x: hidden;
+}
+
 /*Containre for navigation and for carousel*/
 #box1 {
   top: 0;
@@ -111,6 +115,10 @@
   position: absolute;
   left: 0;
   z-index: 1;
+  overflow-x: hidden;
+}
+#box1 .carousel .carousel-inner .carousel-item {
+  overflow-x: hidden;
 }
 #box1 .carousel .carousel-inner .carousel-item img {
   height: 50vh;
@@ -137,6 +145,7 @@
   position: absolute;
   min-width: 100px;
   max-width: 700px !important;
+  overflow-x: hidden;
 }
 #box1 .carousel .carousel-inner .carousel-item .title h5 {
   font-size: 1.8em;
