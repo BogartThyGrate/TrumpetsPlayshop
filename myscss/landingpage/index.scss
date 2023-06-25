@@ -140,10 +140,12 @@
         position: absolute;
         left: 0;
         z-index: 1;
-        overflow-x:hidden ;
+        overflow-y:hidden ;
+
         .carousel-inner{
+            overflow-y:hidden ;
             .carousel-item{
-                overflow-x:hidden ;
+                overflow-y:hidden ;
                 img{
                     height:50vh;
                     width: 100%;
@@ -164,22 +166,25 @@
                     position:absolute; 
                     min-width: 100px;
                     max-width: 700px !important;
-                    overflow-x:hidden ;
+                    overflow-y:hidden ;
                     h5{
                         font-size: 1.8em;
                         font-family: 'Roboto', sans-serif;
+                        overflow-y:hidden ;
                         @include media-breakpoint-up(xxl){
                             font-size: 2em;
                         }
                     }
                 }
                 .power{
+                    
                     h5{
                         font-size: clamp(0.125rem, 0.125rem + 5vw, 1.5rem);
                         color: #e6e6e6;
                         font-weight: 100;
                         max-width: 50%;
                         min-width: 100%;
+                        overflow-y:hidden ;
                     }
                 }
                 .premium{
@@ -189,6 +194,7 @@
                         font-weight: 100;
                         max-width: 20% ;
                         min-width: 100%;
+                        overflow-y:hidden ;
                        
                     }
                 }
@@ -206,6 +212,7 @@
                         font-weight: 100;
                         max-width: 50%;
                         min-width: 100%;
+                        overflow-y:hidden ;
                     }
                 }
                 .title, .power, .premium,.performance{
